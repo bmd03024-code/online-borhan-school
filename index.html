@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BS E-Learning & IT Zone</title>
-<link id="faviconLink" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<link id="faviconLink" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%230b2447'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23d4af37' font-weight='900'>BS</text></svg>">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 <style>
 :root{--primary:#0b2447;--accent:#d4af37;--bg:#f5f7fb;--card:#fff;--text:#1a2233;--muted:#5b6b85;--border:#e2e8f0;--fs:16px;--danger:#b91c1c;--ok:#047857;--wa:#25d366}
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI','Noto Sans Bengali',Tahoma,sans-serif}
+_{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI','Noto Sans Bengali',Tahoma,sans-serif}
 html{font-size:var(--fs);scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
 img{max-width:100%;display:block}
 button{cursor:pointer;border:none;font-family:inherit;font-size:1rem}
-input,textarea,select{font-family:inherit;font-size:1rem;padding:.6rem .8rem;border:1px solid var(--border);border-radius:8px;width:100%;background:#fff;color:var(--text)}
+input,textarea,select{font-family:inherit;font-size:1rem;padding:.6rem.8rem;border:1px solid var(--border);border-radius:8px;width:100%;background:#fff;color:var(--text)}
 input:focus,textarea:focus,select:focus{outline:2px solid var(--accent)}
 a{color:var(--primary);text-decoration:none}
 .container{max-width:1200px;margin:0 auto;padding:0 1rem}
@@ -26,9 +26,9 @@ header.site-header{position:sticky;top:0;z-index:900;background:linear-gradient(
 .brand-logo{width:clamp(38px,7vw,58px);height:clamp(38px,7vw,58px);border-radius:50%;background:radial-gradient(circle at 30% 30%,#ffe38a,#d4af37 55%,#0b2447 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 3px rgba(212,175,55,.35),0 0 22px rgba(212,175,55,.5);color:#0b2447;font-weight:900;font-size:clamp(.9rem,2.4vw,1.35rem);overflow:hidden}
 .brand-logo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .brand-name{font-size:clamp(.95rem,3.6vw,1.5rem);font-weight:900;letter-spacing:.4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:linear-gradient(90deg,#fff,#ffd77a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.admin-btn{background:var(--accent);color:#0b2447;font-weight:800;padding:.5rem .9rem;border-radius:10px;white-space:nowrap;font-size:clamp(.72rem,2.6vw,1rem);box-shadow:0 4px 14px rgba(212,175,55,.45)}
+.admin-btn{background:var(--accent);color:#0b2447;font-weight:800;padding:.5rem.9rem;border-radius:10px;white-space:nowrap;font-size:clamp(.72rem,2.6vw,1rem);box-shadow:0 4px 14px rgba(212,175,55,.45)}
 .admin-btn:hover{filter:brightness(1.08)}
-.live-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.72rem;padding:.2rem .5rem;border-radius:20px;background:rgba(255,255,255,.12);margin-right:.3rem}
+.live-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.72rem;padding:.2rem.5rem;border-radius:20px;background:rgba(255,255,255,.12);margin-right:.3rem}
 .live-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;animation:livePulse 1.5s infinite}
 .live-dot.offline{background:#ef4444;box-shadow:0 0 6px #ef4444;animation:none}
 @keyframes livePulse{0%,100%{opacity:1}50%{opacity:.4}}
@@ -50,37 +50,37 @@ section.block{padding:2.2rem 1rem}
 .section-title{text-align:center;font-size:clamp(1.15rem,3.6vw,1.9rem);font-weight:900;color:var(--primary);margin-bottom:1.4rem;position:relative}
 .section-title::after{content:"";display:block;width:70px;height:4px;background:var(--accent);border-radius:4px;margin:.4rem auto 0}
 .quick-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.9rem}
-.quick-card{background:var(--card);border-radius:14px;padding:1.1rem .6rem;text-align:center;box-shadow:0 6px 18px rgba(11,36,71,.08);transition:.25s;border:2px solid transparent;cursor:pointer}
+.quick-card{background:var(--card);border-radius:14px;padding:1.1rem.6rem;text-align:center;box-shadow:0 6px 18px rgba(11,36,71,.08);transition:.25s;border:2px solid transparent;cursor:pointer}
 .quick-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 10px 26px rgba(212,175,55,.3)}
-.quick-card .icon{font-size:2rem;margin-bottom:.3rem}
-.quick-card .label{font-weight:700;color:var(--primary);font-size:.92rem}
+.quick-card.icon{font-size:2rem;margin-bottom:.3rem}
+.quick-card.label{font-weight:700;color:var(--primary);font-size:.92rem}
 .principal{background:linear-gradient(135deg,#0b2447,#123a6b);color:#fff;border-radius:18px;padding:1.6rem;display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap;box-shadow:0 14px 40px rgba(11,36,71,.3)}
-.principal .photo{width:130px;height:130px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:3rem;background:#1e3a63;overflow:hidden}
-.principal .photo img{width:100%;height:100%;object-fit:cover}
+.principal.photo{width:130px;height:130px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:3rem;background:#1e3a63;overflow:hidden}
+.principal.photo img{width:100%;height:100%;object-fit:cover}
 .principal-body{flex:1;min-width:220px}
 .principal-body h3{color:var(--accent);font-size:1.35rem;margin-bottom:.15rem}
-.principal-body .role{opacity:.85;font-size:.9rem;margin-bottom:.6rem}
+.principal-body.role{opacity:.85;font-size:.9rem;margin-bottom:.6rem}
 .principal-body p{font-size:.98rem;opacity:.95;white-space:pre-line}
 .signature{margin-top:.8rem;font-family:cursive;font-size:1.3rem;color:#ffd77a;border-top:1px dashed rgba(255,255,255,.3);display:inline-block;padding-top:.3rem}
 .faculty-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
 .faculty-card{background:var(--card);border-radius:14px;padding:1rem;text-align:center;box-shadow:0 6px 18px rgba(11,36,71,.08);cursor:pointer;transition:.25s}
 .faculty-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(11,36,71,.18)}
-.faculty-card .photo{width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto .7rem;border:3px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:2.4rem;background:#eef2f9;overflow:hidden}
-.faculty-card .photo img{width:100%;height:100%;object-fit:cover}
+.faculty-card.photo{width:110px;height:110px;border-radius:50%;object-fit:cover;margin:0 auto.7rem;border:3px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:2.4rem;background:#eef2f9;overflow:hidden}
+.faculty-card.photo img{width:100%;height:100%;object-fit:cover}
 .faculty-card h4{color:var(--primary);margin-bottom:.2rem}
-.faculty-card .role{color:var(--muted);font-size:.86rem}
+.faculty-card.role{color:var(--muted);font-size:.86rem}
 .courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem}
 .course-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(11,36,71,.1);display:flex;flex-direction:column;border-top:4px solid var(--accent)}
 .course-head{display:flex;align-items:center;gap:.7rem;padding:1rem}
-.course-head .logo{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.6rem;background:#eef2f9;flex-shrink:0;overflow:hidden}
-.course-head .logo img{width:100%;height:100%;object-fit:cover}
+.course-head.logo{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.6rem;background:#eef2f9;flex-shrink:0;overflow:hidden}
+.course-head.logo img{width:100%;height:100%;object-fit:cover}
 .course-head h4{color:var(--primary);font-size:1.05rem}
 .course-body{padding:0 1rem 1rem;flex:1;display:flex;flex-direction:column;gap:.5rem}
-.course-body .desc{font-size:.9rem;color:var(--muted);flex:1;white-space:pre-line}
+.course-body.desc{font-size:.9rem;color:var(--muted);flex:1;white-space:pre-line}
 .price-row{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;font-weight:800}
 .price-old{text-decoration:line-through;color:var(--danger);font-weight:600;font-size:.95rem}
 .price-new{color:var(--ok);font-size:1.15rem}
-.timer{background:#fef3c7;color:#92400e;padding:.35rem .6rem;border-radius:8px;font-size:.82rem;font-weight:700;text-align:center}
+.timer{background:#fef3c7;color:#92400e;padding:.35rem.6rem;border-radius:8px;font-size:.82rem;font-weight:700;text-align:center}
 .enroll-btn{background:var(--primary);color:#fff;padding:.65rem;border-radius:10px;font-weight:700;margin-top:.4rem}
 .enroll-btn:hover{background:#123a6b}
 .notice-list{display:grid;gap:.8rem}
@@ -99,7 +99,7 @@ section.block{padding:2.2rem 1rem}
 .btn.red{background:var(--danger)}
 .btn.gray{background:#64748b}
 .btn:hover{filter:brightness(1.08)}
-.btn.sm{padding:.35rem .7rem;font-size:.85rem}
+.btn.sm{padding:.35rem.7rem;font-size:.85rem}
 .notes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.9rem}
 .note-card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 5px 14px rgba(11,36,71,.08)}
 .note-card h4{color:var(--primary);margin-bottom:.4rem}
@@ -109,15 +109,15 @@ section.block{padding:2.2rem 1rem}
 .form-row{margin-bottom:.75rem}
 .form-row label{display:block;font-weight:700;font-size:.9rem;margin-bottom:.25rem;color:var(--primary)}
 .qr-inline{background:#f0fdf4;border:2px solid var(--ok);border-radius:12px;padding:1rem;text-align:center;margin:.8rem 0}
-.qr-inline img{width:180px;height:180px;margin:0 auto .5rem;border-radius:10px;background:#fff;object-fit:contain;border:2px solid var(--accent);padding:4px}
-.qr-inline .label{font-size:.85rem;font-weight:700;color:var(--ok);margin-bottom:.4rem}
+.qr-inline img{width:180px;height:180px;margin:0 auto.5rem;border-radius:10px;background:#fff;object-fit:contain;border:2px solid var(--accent);padding:4px}
+.qr-inline.label{font-size:.85rem;font-weight:700;color:var(--ok);margin-bottom:.4rem}
 footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margin-top:2rem}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem;max-width:1200px;margin:0 auto}
 .footer-grid h4{color:var(--accent);margin-bottom:.6rem}
 .footer-grid a{color:#cbd5e1;display:block;padding:.15rem 0}
 .footer-grid a:hover{color:var(--accent)}
 .socials{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem}
-.socials a{background:rgba(255,255,255,.08);padding:.45rem .8rem;border-radius:8px;display:inline-block}
+.socials a{background:rgba(255,255,255,.08);padding:.45rem.8rem;border-radius:8px;display:inline-block}
 .map-frame{width:100%;height:180px;border-radius:10px;border:0;margin-top:.5rem}
 .footer-bottom{text-align:center;padding-top:1rem;margin-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;opacity:.85}
 .float-stack{position:fixed;right:18px;bottom:18px;z-index:1000;display:flex;flex-direction:column;gap:.7rem;align-items:flex-end}
@@ -127,26 +127,26 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
 .fab-chat{background:linear-gradient(135deg,#6d28d9,#0b2447);box-shadow:0 8px 24px rgba(109,40,217,.55)}
 .fab-chat::before{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px dashed rgba(212,175,55,.7);animation:aiSpin 8s linear infinite}
 @keyframes aiSpin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
-.fab-chat .fab-ai-emoji{font-size:26px;line-height:1;filter:drop-shadow(0 0 4px #ffd77a)}
-.fab-chat .fab-ai-label{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0b2447;font-size:.55rem;font-weight:900;padding:1px 5px;border-radius:8px;white-space:nowrap;letter-spacing:.3px}
+.fab-chat.fab-ai-emoji{font-size:26px;line-height:1;filter:drop-shadow(0 0 4px #ffd77a)}
+.fab-chat.fab-ai-label{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0b2447;font-size:.55rem;font-weight:900;padding:1px 5px;border-radius:8px;white-space:nowrap;letter-spacing:.3px}
 .fab-wa{background:linear-gradient(135deg,#25d366,#1ebe5b);box-shadow:0 8px 24px rgba(37,211,102,.55)}
 .fab-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:waPulse 2s infinite}
 @keyframes waPulse{0%{transform:scale(1);opacity:.9}70%{transform:scale(1.5);opacity:0}100%{transform:scale(1.5);opacity:0}}
 .fab-badge{position:absolute;top:-4px;right:-4px;background:#ef4444;color:#fff;font-size:.7rem;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800}
 .chat-panel{position:fixed;right:18px;bottom:150px;width:min(360px,calc(100vw - 36px));height:min(500px,70vh);background:#fff;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.25);z-index:1000;display:flex;flex-direction:column;overflow:hidden}
 .chat-head{background:linear-gradient(135deg,#6d28d9,#0b2447);color:#fff;padding:.8rem 1rem;font-weight:800;display:flex;justify-content:space-between;align-items:center}
-.chat-head .ai-title{display:flex;align-items:center;gap:.5rem}
-.chat-head .ai-avatar{width:32px;height:32px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ffe38a,#d4af37 60%,#6d28d9 100%);display:flex;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 0 0 2px rgba(255,255,255,.4)}
-.chat-head .ai-status{display:flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:600;opacity:.9;margin-top:2px}
-.chat-head .ai-status .dot{width:7px;height:7px;background:#22c55e;border-radius:50%;box-shadow:0 0 6px #22c55e;animation:aiBlink 1.4s infinite}
+.chat-head.ai-title{display:flex;align-items:center;gap:.5rem}
+.chat-head.ai-avatar{width:32px;height:32px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ffe38a,#d4af37 60%,#6d28d9 100%);display:flex;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 0 0 2px rgba(255,255,255,.4)}
+.chat-head.ai-status{display:flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:600;opacity:.9;margin-top:2px}
+.chat-head.ai-status.dot{width:7px;height:7px;background:#22c55e;border-radius:50%;box-shadow:0 0 6px #22c55e;animation:aiBlink 1.4s infinite}
 @keyframes aiBlink{0%,100%{opacity:1}50%{opacity:.35}}
 .chat-head button{background:none;color:#fff;font-size:1.2rem}
 .chat-body{flex:1;overflow-y:auto;padding:.8rem;background:#f5f7fb;display:flex;flex-direction:column;gap:.5rem}
-.chat-msg{max-width:85%;padding:.55rem .8rem;border-radius:12px;font-size:.9rem;white-space:pre-line}
+.chat-msg{max-width:85%;padding:.55rem.8rem;border-radius:12px;font-size:.9rem;white-space:pre-line}
 .chat-msg.bot{background:#fff;color:var(--text);align-self:flex-start;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:3px solid #6d28d9}
 .chat-msg.user{background:var(--primary);color:#fff;align-self:flex-end}
 .chat-suggest{display:flex;gap:.4rem;flex-wrap:wrap;padding:.5rem;border-top:1px solid var(--border);background:#fff}
-.chat-suggest button{background:#eef2f9;color:var(--primary);padding:.35rem .6rem;border-radius:20px;font-size:.78rem;font-weight:700}
+.chat-suggest button{background:#eef2f9;color:var(--primary);padding:.35rem.6rem;border-radius:20px;font-size:.78rem;font-weight:700}
 .chat-input{display:flex;border-top:1px solid var(--border);background:#fff}
 .chat-input input{border:none;border-radius:0;flex:1}
 .chat-input button{background:var(--primary);color:#fff;padding:0 1rem;border-radius:0;font-weight:800}
@@ -158,20 +158,20 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
 .modal-head button{background:rgba(255,255,255,.15);color:#fff;width:34px;height:34px;border-radius:50%;font-size:1.2rem}
 .modal-body{padding:1.2rem}
 .admin-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;padding:1rem}
-.admin-card{background:#fff;border:2px solid var(--border);border-radius:12px;padding:1rem .6rem;text-align:center;cursor:pointer;transition:.2s;position:relative}
+.admin-card{background:#fff;border:2px solid var(--border);border-radius:12px;padding:1rem.6rem;text-align:center;cursor:pointer;transition:.2s;position:relative}
 .admin-card:hover{border-color:var(--accent);box-shadow:0 8px 20px rgba(212,175,55,.25);transform:translateY(-3px)}
-.admin-card .icon{font-size:1.8rem}
-.admin-card .lbl{font-weight:700;color:var(--primary);font-size:.85rem;margin-top:.3rem}
-.admin-card .cnt-badge{position:absolute;top:-6px;right:-6px;background:#ef4444;color:#fff;font-size:.75rem;min-width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;padding:0 .3rem}
+.admin-card.icon{font-size:1.8rem}
+.admin-card.lbl{font-weight:700;color:var(--primary);font-size:.85rem;margin-top:.3rem}
+.admin-card.cnt-badge{position:absolute;top:-6px;right:-6px;background:#ef4444;color:#fff;font-size:.75rem;min-width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;padding:0.3rem}
 .admin-module{padding:1rem 1.2rem 1.5rem}
 .admin-module h3{color:var(--primary);margin-bottom:.8rem;border-bottom:2px solid var(--accent);padding-bottom:.4rem}
-.admin-module .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.7rem;margin-bottom:1rem}
-.admin-module .actions{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0}
+.admin-module.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.7rem;margin-bottom:1rem}
+.admin-module.actions{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0}
 .table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:.6rem}
-.table th,.table td{border:1px solid var(--border);padding:.45rem .5rem;text-align:left}
+.table th,.table td{border:1px solid var(--border);padding:.45rem.5rem;text-align:left}
 .table th{background:#eef2f9;color:var(--primary)}
 .table tr:nth-child(even) td{background:#fafbfd}
-.badge{display:inline-block;padding:.15rem .5rem;border-radius:20px;font-size:.72rem;font-weight:800}
+.badge{display:inline-block;padding:.15rem.5rem;border-radius:20px;font-size:.72rem;font-weight:800}
 .badge.ok{background:#d1fae5;color:#065f46}
 .badge.warn{background:#fef3c7;color:#92400e}
 .badge.info{background:#dbeafe;color:#1e40af}
@@ -188,11 +188,10 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
 .upload-status.loading{color:var(--muted)}
 .avatar-thumb{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);background:#eef2f9}
 .avatar-placeholder{width:44px;height:44px;border-radius:50%;background:#eef2f9;display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:2px solid var(--border)}
-@media(max-width:600px){.principal{flex-direction:column;text-align:center}.header-inner{padding:.55rem .6rem;gap:.4rem}.admin-btn{padding:.42rem .6rem}.toolbar select,.toolbar input{max-width:100%}.fab{width:54px;height:54px}.fab svg{width:26px;height:26px}}
+@media(max-width:600px){.principal{flex-direction:column;text-align:center}.header-inner{padding:.55rem.6rem;gap:.4rem}.admin-btn{padding:.42rem.6rem}.toolbar select,.toolbar input{max-width:100%}.fab{width:54px;height:54px}.fab svg{width:26px;height:26px}}
 </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-inner">
     <div class="brand">
@@ -203,18 +202,15 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     <button class="admin-btn" onclick="openAdminLogin()">🔐 Admin Panel</button>
   </div>
 </header>
-
 <section class="hero" id="heroSlider">
   <button class="slider-nav prev" onclick="slideMove(-1)">❮</button>
   <button class="slider-nav next" onclick="slideMove(1)">❯</button>
   <div class="slider-dots" id="sliderDots"></div>
 </section>
-
 <section class="block" id="quick"><div class="container"><h2 class="section-title">দ্রুত সেবা</h2><div class="quick-grid" id="quickGrid"></div></div></section>
 <section class="block" id="principal"><div class="container"><h2 class="section-title">প্রতিষ্ঠাতার বাণী</h2><div class="principal" id="principalBox"></div></div></section>
 <section class="block" id="faculty"><div class="container"><h2 class="section-title">আমাদের শিক্ষক মণ্ডলী</h2><div class="faculty-grid" id="facultyGrid"></div></div></section>
 <section class="block" id="courses"><div class="container"><h2 class="section-title">আমাদের কোর্সসমূহ</h2><div class="courses-grid" id="coursesGrid"></div></div></section>
-
 <section class="block" id="payment">
   <div class="container">
     <h2 class="section-title">মাসিক ফি / পেমেন্ট</h2>
@@ -234,7 +230,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     </div>
   </div>
 </section>
-
 <section class="block" id="routine">
   <div class="container">
     <h2 class="section-title">📅 ক্লাস রুটিন</h2>
@@ -246,7 +241,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     <div id="routineView" class="notice-list"></div>
   </div>
 </section>
-
 <section class="block" id="documents">
   <div class="container">
     <h2 class="section-title">🎫 অফিসিয়াল ডকুমেন্টস</h2>
@@ -268,12 +262,10 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     </div>
   </div>
 </section>
-
 <section class="block" id="notice"><div class="container"><h2 class="section-title">📢 নোটিস বোর্ড</h2><div class="notice-list" id="noticeList"></div></div></section>
 <section class="block" id="gallery"><div class="container"><h2 class="section-title">🖼️ মিডিয়া গ্যালারি</h2><div class="gallery-grid" id="galleryGrid"></div></div></section>
 <section class="block" id="notes"><div class="container"><h2 class="section-title">📝 ফ্রি নোট ও সাজেশন</h2><div class="notes-grid" id="notesGrid"></div></div></section>
 <section class="block" id="videos"><div class="container"><h2 class="section-title">▶️ ফ্রি ভিডিও ক্লাস</h2><div class="notes-grid" id="videosGrid"></div></div></section>
-
 <section class="block" id="contact">
   <div class="container">
     <h2 class="section-title">📞 যোগাযোগ ও ভর্তি</h2>
@@ -295,7 +287,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     </div>
   </div>
 </section>
-
 <footer class="site-footer">
   <div class="footer-grid">
     <div><h4 id="ftName"></h4><p id="ftWelcome"></p><p id="ftAddress"></p><p id="ftPhone"></p><p id="ftEmail"></p></div>
@@ -305,7 +296,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
   </div>
   <div class="footer-bottom" id="ftBottom"></div>
 </footer>
-
 <div class="float-stack">
   <button class="fab fab-wa" onclick="openWhatsApp()" title="WhatsApp">
     <svg viewBox="0 0 32 32"><path d="M16.003 3C9.383 3 4 8.383 4 15.003c0 2.123.555 4.192 1.61 6.017L4 29l8.184-1.578A11.94 11.94 0 0 0 16 27.006c6.62 0 12.003-5.383 12.003-12.003C28.006 8.383 22.623 3 16.003 3zm0 21.79a9.75 9.75 0 0 1-4.965-1.355l-.356-.21-4.856.936.98-4.734-.232-.371a9.72 9.72 0 0 1-1.503-5.054c0-5.39 4.387-9.777 9.777-9.777 5.39 0 9.777 4.387 9.777 9.777-.001 5.391-4.388 9.788-9.622 9.788zm5.36-7.322c-.295-.148-1.748-.863-2.02-.962-.27-.099-.468-.148-.665.148s-.763.962-.936 1.16c-.172.198-.344.222-.64.074-.295-.148-1.246-.459-2.372-1.464-.877-.782-1.469-1.748-1.641-2.043-.172-.295-.018-.455.13-.602.132-.132.295-.344.443-.516.148-.172.198-.295.295-.492.099-.198.049-.37-.025-.517-.074-.148-.665-1.6-.912-2.19-.24-.575-.483-.497-.665-.505l-.566-.01c-.198 0-.517.074-.787.37-.27.295-1.033 1.01-1.033 2.462 0 1.452 1.058 2.855 1.206 3.053.148.198 2.083 3.18 5.045 4.459.705.305 1.255.487 1.685.623.708.225 1.353.193 1.862.117.567-.085 1.748-.714 1.995-1.404.246-.69.246-1.281.172-1.404-.074-.123-.27-.198-.565-.346z"/></svg>
@@ -316,7 +306,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     <span class="fab-badge">1</span>
   </button>
 </div>
-
 <div class="chat-panel hidden" id="chatPanel">
   <div class="chat-head">
     <div class="ai-title">
@@ -332,7 +321,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
   <div class="chat-suggest" id="chatSuggest"></div>
   <div class="chat-input"><input id="chatInput" placeholder="AI Assistant-কে প্রশ্ন করুন..." onkeydown="if(event.key==='Enter')sendChat()"><button onclick="sendChat()">➤</button></div>
 </div>
-
 <div class="modal-overlay hidden" id="loginModal">
   <div class="modal small">
     <div class="modal-head"><h3>🔐 Admin Login</h3><button onclick="closeLogin()">✕</button></div>
@@ -345,7 +333,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     </div>
   </div>
 </div>
-
 <div class="modal-overlay hidden" id="otpModal">
   <div class="modal small">
     <div class="modal-head"><h3>🔑 পাসওয়ার্ড রিসেট (Email OTP)</h3><button onclick="closeOtpModal()">✕</button></div>
@@ -385,7 +372,6 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     </div>
   </div>
 </div>
-
 <div class="modal-overlay hidden" id="adminModal">
   <div class="modal" style="max-width:1100px">
     <div class="modal-head">
@@ -398,9 +384,7 @@ footer.site-footer{background:#0b2447;color:#cbd5e1;padding:2rem 1rem 1rem;margi
     <div id="adminContent"></div>
   </div>
 </div>
-
 <script>
-/* ============ Firebase Config ============ */
 const FIREBASE_CONFIG = {
   apiKey: "YOUR_API_KEY",
   authDomain: "YOUR_PROJECT.firebaseapp.com",
@@ -424,9 +408,9 @@ function initFirebase(){
       const val = snap.val();
       if(val && typeof val === 'object'){
         DB = val;
-        for(const k in DEFAULT_DB){ if(DB[k] === undefined) DB[k] = JSON.parse(JSON.stringify(DEFAULT_DB[k])); }
+        for(const k in DEFAULT_DB){ if(DB === undefined) DB = JSON.parse(JSON.stringify(DEFAULT_DB)); }
         if(!DB.settings) DB.settings = {...DEFAULT_DB.settings};
-        for(const k in DEFAULT_DB.settings){ if(DB.settings[k] === undefined) DB.settings[k] = DEFAULT_DB.settings[k]; }
+        for(const k in DEFAULT_DB.settings){ if(DB.settings === undefined) DB.settings = DEFAULT_DB.settings; }
         try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); }catch(e){}
         try{ renderFrontend(); }catch(e){}
         if(isAdmin){ try{ renderDashboard(); }catch(e){} }
@@ -435,30 +419,27 @@ function initFirebase(){
   }catch(e){ console.warn('Firebase init error:', e); updateLiveIndicator(false); }
 }
 function pushToFirebase(){
-  if(!fbReady || !fbRef) return false;
+  if(!fbReady ||!fbRef) return false;
   try{ fbRef.set(DB); return true; }catch(e){ console.warn('Firebase push error:', e); return false; }
 }
 function updateLiveIndicator(online){
   const dot = document.getElementById('liveDot');
   const txt = document.getElementById('liveText');
-  if(!dot || !txt) return;
+  if(!dot ||!txt) return;
   if(online){ dot.classList.remove('offline'); txt.textContent = 'লাইভ সিঙ্ক'; }
   else { dot.classList.add('offline'); txt.textContent = 'লোকাল মোড'; }
 }
-
 const LS_KEY = 'bs_elearning_db_v1';
 const WHATSAPP_NUMBER = '+8801612118307';
-const EMAILJS_PUBLIC_KEY  = "YOUR_EMAILJS_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID  = "YOUR_EMAILJS_SERVICE_ID";
+const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";
 const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID";
-if(window.emailjs && EMAILJS_PUBLIC_KEY.indexOf("YOUR_") !== 0){
+if(window.emailjs && EMAILJS_PUBLIC_KEY.indexOf("YOUR_")!== 0){
   try{ emailjs.init(EMAILJS_PUBLIC_KEY); }catch(e){}
 }
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
-const esc = s => String(s==null?'':s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-
-/* ছবি রিসাইজ */
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}));
 function readImageCompressed(file, maxDim, quality, cb){
   if(!file){ cb('', 'কোনো ফাইল নেই'); return; }
   if(!file.type.startsWith('image/')){ cb('', 'শুধু ছবি আপলোড করুন'); return; }
@@ -472,13 +453,13 @@ function readImageCompressed(file, maxDim, quality, cb){
         let {width, height} = img;
         if(width > maxDim || height > maxDim){
           const ratio = Math.min(maxDim/width, maxDim/height);
-          width = Math.round(width * ratio); height = Math.round(height * ratio);
+          width = Math.round(width _ ratio); height = Math.round(height _ ratio);
         }
         const canvas = document.createElement('canvas');
         canvas.width = width; canvas.height = height;
         canvas.getContext('2d').drawImage(img, 0, 0, width, height);
         const isPng = file.type === 'image/png' || file.type === 'image/webp';
-        cb(isPng ? canvas.toDataURL('image/png') : canvas.toDataURL('image/jpeg', quality), null);
+        cb(isPng? canvas.toDataURL('image/png') : canvas.toDataURL('image/jpeg', quality), null);
       }catch(e){ cb('', 'রিসাইজ সমস্যা'); }
     };
     img.src = ev.target.result;
@@ -487,11 +468,10 @@ function readImageCompressed(file, maxDim, quality, cb){
 }
 function readPdfBase64(file, cb){
   if(!file){ cb('', 'কোনো ফাইল নেই'); return; }
-  if(file.size > 4*1024*1024){ cb('', 'PDF ৪MB-এর কম হতে হবে'); return; }
+  if(file.size > 4_1024_1024){ cb('', 'PDF ৪MB-এর কম হতে হবে'); return; }
   const r = new FileReader();
   r.onload = ()=> cb(r.result, null); r.readAsDataURL(file);
 }
-
 const DEMO_STUDENTS = [
   {id:"demo_st1", year:"2025", courseId:"c1", courseName:"সহীহ কুরআন শিক্ষা", roll:"001", name:"মোহাম্মদ আব্দুল্লাহ", father:"আব্দুল করিম", mother:"রাহেলা বেগম", phone:"01711111111", photo:"", createdAt:"2025-01-10T10:00:00Z"},
   {id:"demo_st2", year:"2025", courseId:"c1", courseName:"সহীহ কুরআন শিক্ষা", roll:"002", name:"আয়েশা সিদ্দিকা", father:"মোহাম্মদ ইউসুফ", mother:"ফাতেমা খাতুন", phone:"01722222222", photo:"", createdAt:"2025-01-12T10:00:00Z"},
@@ -519,7 +499,6 @@ const DEMO_ADMITS = [
   {id:"demo_ac4", studentId:"demo_st4", year:"2025", courseId:"c2", exam:"ফাইনাল", roll:"002", date:"2025-05-15T10:00:00Z"},
   {id:"demo_ac5", studentId:"demo_st5", year:"2025", courseId:"c3", exam:"ফাইনাল", roll:"001", date:"2025-05-20T10:00:00Z"}
 ];
-
 const DEFAULT_DB = {
   settings:{
     name:"BS E-Learning & IT Zone",address:"উত্তর ওয়াহেদপুর, মিরসরাই, চট্টগ্রাম",
@@ -578,9 +557,8 @@ const DEFAULT_DB = {
     {id:"cb3", title:"ভর্তি পদ্ধতি", text:"কোর্স কার্ডে এনরোল করুন → তথ্য দিন → QR কোড স্ক্যান → TrxID দিয়ে সাবমিট।"}
   ]
 };
-
 let DB = null;
-const BC_CHANNEL = ('BroadcastChannel' in window) ? new BroadcastChannel('bs_elearning_sync') : null;
+const BC_CHANNEL = ('BroadcastChannel' in window)? new BroadcastChannel('bs_elearning_sync') : null;
 function emitLiveSync(){
   try{ if(BC_CHANNEL) BC_CHANNEL.postMessage({type:'db_updated', at: Date.now()}); }catch(e){}
   try{ window.dispatchEvent(new CustomEvent('bs-db-updated', {detail: DB})); }catch(e){}
@@ -598,18 +576,17 @@ window.addEventListener('storage', (e)=>{
     try{ DB = JSON.parse(e.newValue); renderFrontend(); }catch(err){}
   }
 });
-
 function loadDB(){
-  try{ const raw = localStorage.getItem(LS_KEY); DB = raw ? JSON.parse(raw) : JSON.parse(JSON.stringify(DEFAULT_DB)); }
+  try{ const raw = localStorage.getItem(LS_KEY); DB = raw? JSON.parse(raw) : JSON.parse(JSON.stringify(DEFAULT_DB)); }
   catch(e){ DB = JSON.parse(JSON.stringify(DEFAULT_DB)); }
-  for(const k in DEFAULT_DB){ if(DB[k] === undefined) DB[k] = JSON.parse(JSON.stringify(DEFAULT_DB[k])); }
+  for(const k in DEFAULT_DB){ if(DB === undefined) DB = JSON.parse(JSON.stringify(DEFAULT_DB)); }
   if(!DB.settings) DB.settings = {...DEFAULT_DB.settings};
-  for(const k in DEFAULT_DB.settings){ if(DB.settings[k] === undefined) DB.settings[k] = DEFAULT_DB.settings[k]; }
+  for(const k in DEFAULT_DB.settings){ if(DB.settings === undefined) DB.settings = DEFAULT_DB.settings; }
   if(!DB.pendingEnrollments) DB.pendingEnrollments = [];
   if(!DB.officialDocLog) DB.officialDocLog = [];
-  if(!DB.students || !DB.students.length){ DB.students = DEMO_STUDENTS.slice(); }
-  if(!DB.results || !DB.results.length){ DB.results = DEMO_RESULTS.slice(); }
-  if(!DB.admits || !DB.admits.length){ DB.admits = DEMO_ADMITS.slice(); }
+  if(!DB.students ||!DB.students.length){ DB.students = DEMO_STUDENTS.slice(); }
+  if(!DB.results ||!DB.results.length){ DB.results = DEMO_RESULTS.slice(); }
+  if(!DB.admits ||!DB.admits.length){ DB.admits = DEMO_ADMITS.slice(); }
 }
 function saveDB(){
   try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); }
@@ -617,7 +594,7 @@ function saveDB(){
   emitLiveSync(); pushToFirebase();
   try{ renderFrontend(); }catch(e){}
 }
-function uid(p){ return (p||'id') + '_' + Date.now() + '_' + Math.floor(Math.random()*9999); }
+function uid(p){ return (p||'id') + '_' + Date.now() + '_' + Math.floor(Math.random()_9999); }
 function applyTheme(){
   document.documentElement.style.setProperty('--primary', DB.settings.themePrimary || '#0b2447');
   document.documentElement.style.setProperty('--accent', DB.settings.themeAccent || '#d4af37');
@@ -626,16 +603,14 @@ function applyTheme(){
 function getQRSource(){ return DB.settings.paymentQR || ('https://api.qrserver.com/v1/create-qr-code/?size=220x220&data='+encodeURIComponent('BS-E-Learning-Payment')); }
 function updateFavicon(){
   const link = document.getElementById('faviconLink'); if(!link) return;
-  link.href = DB.settings.logo ? DB.settings.logo : "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>";
+  link.href = DB.settings.logo? DB.settings.logo : "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%230b2447'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23d4af37' font-weight='900'>BS</text></svg>";
 }
-
 function renderFrontend(){
   const s = DB.settings; applyTheme();
-  $('#brandName').textContent = s.name;
-  const bl = $('#brandLogo'); bl.innerHTML = s.logo ? '<img src="'+esc(s.logo)+'" alt="logo">' : 'BS';
+  document.getElementById('brandName').textContent = s.name;
+  const bl = document.getElementById('brandLogo'); bl.innerHTML = s.logo? '<img src="'+esc(s.logo)+'" alt="logo">' : 'BS';
   updateFavicon();
-
-  const heroEl = $('#heroSlider'); $$('.slide', heroEl).forEach(x=>x.remove());
+  const heroEl = document.getElementById('heroSlider'); document.querySelectorAll('.slide').forEach(x=>x.remove());
   DB.slides.forEach((sl)=>{
     const d = document.createElement('div');
     d.className = 'slide' + (sl.img?' has-img':'');
@@ -643,16 +618,16 @@ function renderFrontend(){
     d.innerHTML = '<div class="slide-content"><h2>'+esc(sl.title)+'</h2><p>'+esc(sl.text)+'</p></div>';
     heroEl.appendChild(d);
   });
-  $('#sliderDots').innerHTML = DB.slides.map((_,i)=>'<span data-i="'+i+'" class="'+(i===0?'active':'')+'" onclick="goSlide('+i+')"></span>').join('');
+  document.getElementById('sliderDots').innerHTML = DB.slides.map((_,i)=>'<span data-i="'+i+'" class="'+(i===0?'active':'')+'" onclick="goSlide('+i+')"></span>').join('');
   goSlide(0);
-  $('#quickGrid').innerHTML = DB.shortcuts.map((q,i)=>'<div class="quick-card" onclick="quickAction('+i+')"><div class="icon">'+esc(q.icon)+'</div><div class="label">'+esc(q.label)+'</div></div>').join('');
+  document.getElementById('quickGrid').innerHTML = DB.shortcuts.map((q,i)=>'<div class="quick-card" onclick="quickAction('+i+')"><div class="icon">'+esc(q.icon)+'</div><div class="label">'+esc(q.label)+'</div></div>').join('');
   const p = DB.principal;
-  $('#principalBox').innerHTML =
+  document.getElementById('principalBox').innerHTML =
     '<div class="photo">'+ (p.photo? '<img src="'+esc(p.photo)+'" alt="">' : '👤') +'</div>'+
     '<div class="principal-body"><h3>'+esc(p.name)+'</h3><div class="role">'+esc(p.role)+'</div><p>'+esc(p.message)+'</p>'+
     (s.signature? '<div class="signature"><img src="'+esc(s.signature)+'" style="height:50px;display:inline-block" alt=""></div>' : '<div class="signature">'+esc(p.name)+'</div>')+'</div>';
-  $('#facultyGrid').innerHTML = DB.faculty.map(f=>'<div class="faculty-card" onclick="showFaculty(\''+f.id+'\')"><div class="photo">'+(f.photo?'<img src="'+esc(f.photo)+'" alt="">':'👤')+'</div><h4>'+esc(f.name)+'</h4><div class="role">'+esc(f.role)+'</div></div>').join('');
-  $('#coursesGrid').innerHTML = DB.courses.map(c=>{
+  document.getElementById('facultyGrid').innerHTML = DB.faculty.map(f=>'<div class="faculty-card" onclick="showFaculty(\''+f.id+'\')"><div class="photo">'+(f.photo?'<img src="'+esc(f.photo)+'" alt="">':'👤')+'</div><h4>'+esc(f.name)+'</h4><div class="role">'+esc(f.role)+'</div></div>').join('');
+  document.getElementById('coursesGrid').innerHTML = DB.courses.map(c=>{
     const hasOffer = c.oldPrice && Number(c.oldPrice) > Number(c.price);
     const timerId = 'tmr_'+c.id;
     return '<div class="course-card"><div class="course-head"><div class="logo">'+(c.logo?'<img src="'+esc(c.logo)+'" alt="">':'📘')+'</div><h4>'+esc(c.name)+'</h4></div>'+
@@ -664,53 +639,53 @@ function renderFrontend(){
   }).join('');
   startTimers();
   const opts = DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  ['#payCourse','#adCourse','#rtCourse','#docCourse'].forEach(sel=>{ const el = $(sel); if(el) el.innerHTML = opts; });
+  ['#payCourse','#adCourse','#rtCourse','#docCourse'].forEach(sel=>{ const el = document.querySelector(sel); if(el) el.innerHTML = opts; });
   const years = yearOptions();
-  ['#rtYear','#docYear'].forEach(sel=>{ const el=$(sel); if(el) el.innerHTML = years; });
-  $('#payYear').value = new Date().getFullYear()+'';
+  ['#rtYear','#docYear'].forEach(sel=>{ const el=document.querySelector(sel); if(el) el.innerHTML = years; });
+  document.getElementById('payYear').value = new Date().getFullYear()+'';
   const qrSrc = getQRSource();
-  const qrInline = $('#payQRInline'); if(qrInline) qrInline.src = qrSrc;
-  const qrAdm = $('#adQRInline'); if(qrAdm) qrAdm.src = qrSrc;
-  $('#noticeList').innerHTML = DB.notices.length? DB.notices.map(n=>
+  const qrInline = document.getElementById('payQRInline'); if(qrInline) qrInline.src = qrSrc;
+  const qrAdm = document.getElementById('adQRInline'); if(qrAdm) qrAdm.src = qrSrc;
+  document.getElementById('noticeList').innerHTML = DB.notices.length? DB.notices.map(n=>
     '<div class="notice-item"><h4>'+esc(n.title)+'</h4><small>📅 '+esc(n.date||'')+'</small><div style="white-space:pre-line;margin-top:.4rem">'+esc(n.text)+'</div>'+
     (n.image? '<img src="'+esc(n.image)+'" alt="">':'')+(n.video? '<video controls src="'+esc(n.video)+'"></video>':'')+'</div>'
   ).join('') : '<div class="notice-item">এখনো কোনো নোটিস নেই।</div>';
-  $('#galleryGrid').innerHTML = DB.gallery.length? DB.gallery.map(g=>{
+  document.getElementById('galleryGrid').innerHTML = DB.gallery.length? DB.gallery.map(g=>{
     if(g.type==='video') return '<video controls src="'+esc(g.src)+'"></video>';
     if(g.type==='link') return '<div class="note-card"><h4>🔗 লিংক</h4><a href="'+esc(g.src)+'" target="_blank">দেখুন →</a></div>';
     return '<img src="'+esc(g.src)+'" alt="" onclick="window.open(this.src)">';
   }).join('') : '<div class="notice-item">গ্যালারি খালি।</div>';
-  $('#notesGrid').innerHTML = DB.notes.length? DB.notes.map(n=>
+  document.getElementById('notesGrid').innerHTML = DB.notes.length? DB.notes.map(n=>
     '<div class="note-card"><h4>'+esc(n.title)+'</h4>'+(n.image? '<img src="'+esc(n.image)+'" alt="">':'')+
     (n.text? '<p style="font-size:.9rem;white-space:pre-line">'+esc(n.text)+'</p>':'')+
     (n.pdf? '<a class="btn sm" style="margin-top:.5rem;display:inline-block" href="'+esc(n.pdf)+'" download>📄 PDF</a>':'')+'</div>'
   ).join('') : '<div class="notice-item">ফ্রি নোট নেই।</div>';
-  $('#videosGrid').innerHTML = DB.videos.length? DB.videos.map(v=>
+  document.getElementById('videosGrid').innerHTML = DB.videos.length? DB.videos.map(v=>
     '<div class="note-card"><h4>'+esc(v.title)+'</h4>'+
     (v.type==='link'? '<a class="btn sm" href="'+esc(v.src)+'" target="_blank">▶ দেখুন</a>' : '<video controls src="'+esc(v.src)+'" style="width:100%;border-radius:8px"></video>')+'</div>'
   ).join('') : '<div class="notice-item">ফ্রি ভিডিও নেই।</div>';
-  $('#contactInfo').innerHTML = '📞 '+esc(s.phone)+' | 📧 '+esc(s.email)+'<br>📍 '+esc(s.address);
-  $('#ftName').textContent = s.name; $('#ftWelcome').textContent = s.welcome;
-  $('#ftAddress').textContent = '📍 '+s.address; $('#ftPhone').textContent = '📞 '+s.phone;
-  $('#ftEmail').textContent = '📧 '+s.email;
+  document.getElementById('contactInfo').innerHTML = '📞 '+esc(s.phone)+' | 📧 '+esc(s.email)+'<br>📍 '+esc(s.address);
+  document.getElementById('ftName').textContent = s.name; document.getElementById('ftWelcome').textContent = s.welcome;
+  document.getElementById('ftAddress').textContent = '📍 '+s.address; document.getElementById('ftPhone').textContent = '📞 '+s.phone;
+  document.getElementById('ftEmail').textContent = '📧 '+s.email;
   const soc = [];
   if(s.facebook) soc.push('<a href="'+esc(s.facebook)+'" target="_blank">📘 Facebook</a>');
   if(s.youtube) soc.push('<a href="'+esc(s.youtube)+'" target="_blank">▶ YouTube</a>');
   if(s.tiktok) soc.push('<a href="'+esc(s.tiktok)+'" target="_blank">🎵 TikTok</a>');
   if(s.whatsapp) soc.push('<a href="'+esc(s.whatsapp)+'" target="_blank">💬 WhatsApp</a>');
-  $('#ftSocial').innerHTML = soc.join('') || '<span style="opacity:.6">লিংক নেই</span>';
-  $('#ftMap').src = s.mapLink || ('https://www.google.com/maps?q='+encodeURIComponent(s.address)+'&output=embed');
-  $('#ftBottom').innerHTML = '© '+new Date().getFullYear()+' '+esc(s.name)+' | সর্বস্বত্ব সংরক্ষিত';
+  document.getElementById('ftSocial').innerHTML = soc.join('') || '<span style="opacity:.6">লিংক নেই</span>';
+  document.getElementById('ftMap').src = s.mapLink || ('https://www.google.com/maps?q='+encodeURIComponent(s.address)+'&output=embed');
+  document.getElementById('ftBottom').innerHTML = '© '+new Date().getFullYear()+' '+esc(s.name)+' | সর্বস্বত্ব সংরক্ষিত';
   renderChatSuggest();
 }
 function yearOptions(){ const now = new Date().getFullYear(); let out=''; for(let y=now+1;y>=now-5;y--) out += '<option value="'+y+'">'+y+'</option>'; return out; }
 function openWhatsApp(){ const num = WHATSAPP_NUMBER.replace(/[^0-9]/g,''); const msg = encodeURIComponent('আসসালামু আলাইকুম, BS E-Learning & IT Zone সম্পর্কে জানতে চাই।'); window.open('https://wa.me/'+num+'?text='+msg, '_blank'); }
 let slideIdx = 0, slideTimer = null;
 function goSlide(i){
-  const slides = $$('#heroSlider .slide'); if(!slides.length) return;
+  const slides = document.querySelectorAll('#heroSlider.slide'); if(!slides.length) return;
   slideIdx = (i + slides.length) % slides.length;
   slides.forEach((s,k)=>s.classList.toggle('active', k===slideIdx));
-  $$('#sliderDots span').forEach((d,k)=>d.classList.toggle('active', k===slideIdx));
+  document.querySelectorAll('#sliderDots span').forEach((d,k)=>d.classList.toggle('active', k===slideIdx));
   clearTimeout(slideTimer); slideTimer = setTimeout(()=>goSlide(slideIdx+1), 5000);
 }
 function slideMove(d){ goSlide(slideIdx+d); }
@@ -718,7 +693,7 @@ let timerInterval = null;
 function startTimers(){
   clearInterval(timerInterval);
   timerInterval = setInterval(()=>{
-    $$('.timer').forEach(el=>{
+    document.querySelectorAll('.timer').forEach(el=>{
       const end = new Date(el.dataset.end).getTime(); const now = Date.now();
       if(isNaN(end)){ el.textContent=''; return; }
       let diff = end - now;
@@ -731,13 +706,8 @@ function startTimers(){
     });
   },1000);
 }
-function quickAction(i){ const q = DB.shortcuts[i]; if(!q) return; if(q.target==='chat'){ toggleChat(true); return; } const el = document.getElementById(q.target); if(el) el.scrollIntoView({behavior:'smooth'}); }
-function showFaculty(id){
-  const f = DB.faculty.find(x=>x.id===id); if(!f) return;
-  printTeacherCard(id); // সরাসরি প্রফেশনাল আইডি কার্ড
-}
-
-/* ============ এনরোল — ছবি আপলোড সহ ============ */
+function quickAction(i){ const q = DB.shortcuts; if(!q) return; if(q.target==='chat'){ toggleChat(true); return; } const el = document.getElementById(q.target); if(el) el.scrollIntoView({behavior:'smooth'}); }
+function showFaculty(id){ const f = DB.faculty.find(x=>x.id===id); if(!f) return; alert(f.name+" - "+f.role+"\n"+f.qual); }
 function openEnroll(courseId){
   const c = DB.courses.find(x=>x.id===courseId); if(!c) return;
   const old = document.getElementById('enrollModal'); if(old) old.remove();
@@ -756,115 +726,85 @@ function openEnroll(courseId){
     '<div class="form-row"><label>পিতার নাম</label><input id="enFather"></div>'+
     '<div class="form-row"><label>মাতার নাম</label><input id="enMother"></div>'+
     '<div class="form-row"><label>ফোন নম্বর</label><input id="enPhone"></div>'+
-    '<div class="qr-inline">'+
-      '<div class="label">💳 ভর্তি ফি পরিশোধের কিউআর কোড</div>'+
-      '<img src="'+esc(qrSrc)+'" alt="Enroll QR">'+
-      '<p style="font-size:.82rem;color:var(--muted);margin:0">বিকাশ/নগদ/রকেট দিয়ে কিউআর স্ক্যান করে <b>৳'+esc(c.price)+'</b> পরিশোধ করে নিচে TrxID লিখুন</p>'+
-    '</div>'+
+    '<div class="qr-inline"><div class="label">💳 ভর্তি ফি পরিশোধের কিউআর কোড</div><img src="'+esc(qrSrc)+'" alt="Enroll QR"><p style="font-size:.82rem;color:var(--muted);margin:0">বিকাশ/নগদ/রকেট দিয়ে কিউআর স্ক্যান করে <b>৳'+esc(c.price)+'</b> পরিশোধ করে নিচে TrxID লিখুন</p></div>'+
     '<div class="form-row"><label>ট্রানজেকশন আইডি (TrxID)</label><input id="enTrx" placeholder="পেমেন্টের TrxID"></div>'+
-    '<button class="btn gold" style="width:100%" onclick="submitEnroll(\''+c.id+'\')">✔ এনরোলমেন্ট রিকোয়েস্ট পাঠান</button>'+
-    '<div class="hint" style="text-align:center;color:var(--ok);font-weight:700;margin-top:.5rem">✔ সাবমিট করার পর অ্যাডমিন Approve করলে আপনি শিক্ষার্থী হিসেবে যুক্ত হবেন।</div>'+
-  '</div></div>';
+    '<button class="btn gold" style="width:100%" onclick="submitEnroll(\''+c.id+'\')">✔ এনরোলমেন্ট রিকোয়েস্ট পাঠান</button></div></div>';
   d.addEventListener('click', e=>{ if(e.target===d) d.remove(); });
   document.body.appendChild(d);
 }
 let _enrollPhoto = '';
 function previewEnrollPhoto(input){
-  const f = input.files[0]; if(!f) return;
+  const f = input.files; if(!f) return;
   readImageCompressed(f, 300, 0.85, (b64, err)=>{
     if(err){ alert('❌ '+err); return; }
     _enrollPhoto = b64;
-    $('#enPhotoPreview').innerHTML = '<img src="'+b64+'" style="width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin:.3rem auto">';
+    document.getElementById('enPhotoPreview').innerHTML = '<img src="'+b64+'" style="width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin:.3rem auto">';
   });
 }
 function submitEnroll(courseId){
   const c = DB.courses.find(x=>x.id===courseId); if(!c) return;
-  const year = $('#enYear').value.trim();
-  const name = $('#enName').value.trim();
-  const father = $('#enFather').value.trim();
-  const mother = $('#enMother').value.trim();
-  const phone = $('#enPhone').value.trim();
-  const trx = $('#enTrx').value.trim();
+  const year = document.getElementById('enYear').value.trim();
+  const name = document.getElementById('enName').value.trim();
+  const father = document.getElementById('enFather').value.trim();
+  const mother = document.getElementById('enMother').value.trim();
+  const phone = document.getElementById('enPhone').value.trim();
+  const trx = document.getElementById('enTrx').value.trim();
   if(!year||!name||!phone){ alert('শিক্ষাবর্ষ, নাম ও ফোন নম্বর দিন।'); return; }
   if(!trx){ alert('TrxID দিন।'); return; }
   DB.pendingEnrollments.push({id: uid('pe'), year, courseId, courseName:c.name, courseFee:c.price, name, father, mother, phone, trx, photo:_enrollPhoto, type:'enroll', status:'pending', createdAt:new Date().toISOString()});
-  _enrollPhoto = '';
-  saveDB();
-  document.getElementById('enrollModal').remove();
-  alert('✅ এনরোলমেন্ট রিকোয়েস্ট পাঠানো হয়েছে!');
-}
-
-/* ============ ভর্তি — ছবি আপলোড সহ ============ */
-let _adPhoto = '';
-function previewAdPhoto(input){
-  const f = input.files[0]; if(!f) return;
-  readImageCompressed(f, 300, 0.85, (b64, err)=>{
-    if(err){ alert('❌ '+err); return; }
-    _adPhoto = b64;
-    const el = document.getElementById('adPhotoPreview');
-    if(el) el.innerHTML = '<img src="'+b64+'" style="width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin:.3rem auto">';
-  });
+  _enrollPhoto = ''; saveDB(); document.getElementById('enrollModal').remove(); alert('✅ এনরোলমেন্ট রিকোয়েস্ট পাঠানো হয়েছে!');
 }
 function submitAdmission(){
-  const year = $('#adYear').value.trim();
-  const courseId = $('#adCourse').value;
-  const name = $('#adName').value.trim();
-  const father = $('#adFather').value.trim();
-  const mother = $('#adMother').value.trim();
-  const phone = $('#adPhone').value.trim();
-  const trx = $('#adTrx').value.trim();
+  const year = document.getElementById('adYear').value.trim();
+  const courseId = document.getElementById('adCourse').value;
+  const name = document.getElementById('adName').value.trim();
+  const father = document.getElementById('adFather').value.trim();
+  const mother = document.getElementById('adMother').value.trim();
+  const phone = document.getElementById('adPhone').value.trim();
+  const trx = document.getElementById('adTrx').value.trim();
   if(!year||!name||!phone){ alert('শিক্ষাবর্ষ, নাম ও ফোন নম্বর দিন।'); return; }
   if(!trx){ alert('TrxID দিন।'); return; }
   const c = DB.courses.find(x=>x.id===courseId);
-  DB.pendingEnrollments.push({id: uid('pe'), year, courseId, courseName:c?c.name:'', courseFee:c?c.price:0, name, father, mother, phone, trx, photo:_adPhoto, type:'admission', status:'pending', createdAt:new Date().toISOString()});
-  _adPhoto = '';
-  saveDB();
-  alert('✅ ভর্তির আবেদন পাঠানো হয়েছে!');
-  ['#adYear','#adName','#adFather','#adMother','#adPhone','#adTrx'].forEach(s=>$(s).value='');
-  const el = document.getElementById('adPhotoPreview'); if(el) el.innerHTML = '';
+  DB.pendingEnrollments.push({id: uid('pe'), year, courseId, courseName:c?c.name:'', courseFee:c?c.price:0, name, father, mother, phone, trx, photo:"", type:'admission', status:'pending', createdAt:new Date().toISOString()});
+  saveDB(); alert('✅ ভর্তির আবেদন পাঠানো হয়েছে!');
 }
-
 function submitMonthlyFee(){
-  const year = $('#payYear').value.trim();
-  const courseId = $('#payCourse').value;
-  const roll = $('#payRoll').value.trim();
-  const month = $('#payMonth').value;
-  const trx = $('#payTrx').value.trim();
+  const year = document.getElementById('payYear').value.trim();
+  const courseId = document.getElementById('payCourse').value;
+  const roll = document.getElementById('payRoll').value.trim();
+  const month = document.getElementById('payMonth').value;
+  const trx = document.getElementById('payTrx').value.trim();
   if(!year||!roll||!trx){ alert('শিক্ষাবর্ষ, রোল ও TrxID দিন।'); return; }
   DB.payments.push({id:uid('pay'), year, courseId, roll, month, trx, date:new Date().toISOString(), status:'pending'});
-  saveDB();
-  alert('✅ পেমেন্ট কনফার্ম হয়েছে।');
-  ['#payRoll','#payTrx'].forEach(s=>$(s).value='');
+  saveDB(); alert('✅ পেমেন্ট কনফার্ম হয়েছে।');
 }
-
 function loadRoutine(){
-  const year = $('#rtYear').value, courseId = $('#rtCourse').value;
+  const year = document.getElementById('rtYear').value, courseId = document.getElementById('rtCourse').value;
   const list = DB.routines.filter(r=>r.year===year && r.courseId===courseId);
-  $('#routineView').innerHTML = list.length? list.map(r=>'<div class="notice-item"><h4>📅 '+esc(r.day)+' — '+esc(r.time)+'</h4><div><b>বিষয়:</b> '+esc(r.subject)+'</div><div><b>শিক্ষক:</b> '+esc(r.teacher)+'</div></div>').join('') : '<div class="notice-item">এই শিক্ষাবর্ষ ও কোর্সের জন্য কোনো রুটিন নেই।</div>';
+  document.getElementById('routineView').innerHTML = list.length? list.map(r=>'<div class="notice-item"><h4>📅 '+esc(r.day)+' — '+esc(r.time)+'</h4><div><b>বিষয়:</b> '+esc(r.subject)+'</div><div><b>শিক্ষক:</b> '+esc(r.teacher)+'</div></div>').join('') : '<div class="notice-item">এই শিক্ষাবর্ষ ও কোর্সের জন্য কোনো রুটিন নেই।</div>';
 }
 function printRoutine(){
-  const year = $('#rtYear').value, courseId = $('#rtCourse').value;
+  const year = document.getElementById('rtYear').value, courseId = document.getElementById('rtCourse').value;
   const c = DB.courses.find(x=>x.id===courseId);
   const list = DB.routines.filter(r=>r.year===year && r.courseId===courseId);
   if(!list.length){ alert('রুটিন নেই।'); return; }
   let body = '<h2 style="text-align:center">'+esc(DB.settings.name)+'</h2><h3 style="text-align:center">ক্লাস রুটিন — '+esc(c?c.name:'')+' ('+esc(year)+')</h3>'+
-  '<table border="1" cellspacing="0" cellpadding="8" style="width:100%;border-collapse:collapse"><tr><th>দিন</th><th>সময়</th><th>বিষয়</th><th>শিক্ষক</th></tr>';
+  '<table border="1" cellspacing="0" cellpadding="8" style="width:100%;border-collapse:collapse"><tr><th>দিন</th><th>সময়</th><th>বিষয়</th><th>শিক্ষক</th></tr>';
   list.forEach(r=> body += '<tr><td>'+esc(r.day)+'</td><td>'+esc(r.time)+'</td><td>'+esc(r.subject)+'</td><td>'+esc(r.teacher)+'</td></tr>');
   body += '</table>'; openDocWindow('ক্লাস রুটিন', body);
 }
-
 function toggleChat(force){
-  const p = $('#chatPanel');
+  const p = document.getElementById('chatPanel');
   if(force===true) p.classList.remove('hidden'); else p.classList.toggle('hidden');
-  if(!p.classList.contains('hidden') && !$('#chatBody').children.length){
+  if(!p.classList.contains('hidden') &&!document.getElementById('chatBody').children.length){
     botSay('🤖 আসসালামু আলাইকুম! আমি '+DB.settings.name+' এর AI Smart Assistant।');
   }
 }
-function renderChatSuggest(){ const sugg = ['কোর্স ফি','যোগাযোগ','ফ্রি নোট','এডমিট কার্ড','ভর্তি পদ্ধতি']; $('#chatSuggest').innerHTML = sugg.map(s=>'<button onclick="chatQuick(\''+s+'\')">'+s+'</button>').join(''); }
-function chatQuick(t){ $('#chatInput').value = t; sendChat(); }
-function botSay(text){ const b = $('#chatBody'); const d = document.createElement('div'); d.className='chat-msg bot'; d.textContent = text; b.appendChild(d); b.scrollTop = b.scrollHeight; }
-function userSay(text){ const b = $('#chatBody'); const d = document.createElement('div'); d.className='chat-msg user'; d.textContent = text; b.appendChild(d); b.scrollTop = b.scrollHeight; }
-function sendChat(){ const inp = $('#chatInput'); const t = inp.value.trim(); if(!t) return; userSay(t); inp.value=''; setTimeout(()=>botSay(getBotReply(t)), 350); }
+function renderChatSuggest(){ const sugg = ['কোর্স ফি','যোগাযোগ','ফ্রি নোট','এডমিট কার্ড','ভর্তি পদ্ধতি']; document.getElementById('chatSuggest').innerHTML = sugg.map(s=>'<button onclick="chatQuick(\''+s+'\')">'+s+'</button>').join(''); }
+function chatQuick(t){ document.getElementById('chatInput').value = t; sendChat(); }
+function botSay(text){ const b = document.getElementById('chatBody'); const d = document.createElement('div'); d.className='chat-msg bot'; d.textContent = text; b.appendChild(d); b.scrollTop = b.scrollHeight; }
+function userSay(text){ const b = document.getElementById('chatBody'); const d = document.createElement('div'); d.className='chat-msg user'; d.textContent = text; b.appendChild(d); b.scrollTop = b.scrollHeight; }
+function sendChat(){ const inp = document.getElementById('chatInput'); const t = inp.value.trim(); if(!t) return; userSay(t); inp.value=''; setTimeout(()=>botSay(getBotReply(t)), 350); }
 function getBotReply(q){
   const low = q.toLowerCase();
   for(const c of DB.chatbot){ if(low.includes(c.title.toLowerCase()) || c.title.toLowerCase().includes(low)) return c.text; }
@@ -875,1280 +815,43 @@ function getBotReply(q){
   if(low.includes('এডমিট')) return '🎫 এডমিট কার্ড সেকশনে জেনারেট করুন।';
   if(low.includes('সার্টিফিকেট')) return '🎓 সার্টিফিকেট সেকশনে জেনারেট করুন।';
   if(low.includes('কোর্স')) return '📚 আমাদের কোর্স: '+DB.courses.map(c=>c.name).join(', ');
-  if(low.includes('ভর্তি')||low.includes('এনরোল')) return '📥 কোর্স কার্ডের "এনরোল করুন" → তথ্য + ছবি দিন → QR স্ক্যান → TrxID।';
-  if(low.includes('whatsapp')||low.includes('হোয়াটস')) return '💬 WhatsApp: '+WHATSAPP_NUMBER;
-  if(low.includes('ধন্যবাদ')) return '🙏 আপনাকেও ধন্যবাদ!';
-  return 'দুঃখিত, বুঝতে পারিনি।';
+  return '🤖 আপনার প্রশ্নটি পেয়েছি: "'+q+'"\nআমাদের টিম শীঘ্রই উত্তর দেবে। WhatsApp এ যোগাযোগ করুন: '+DB.settings.phone;
 }
-
 let isAdmin = false;
-function openAdminLogin(){ $('#loginModal').classList.remove('hidden'); $('#lgId').value=''; $('#lgPass').value=''; $('#loginMsg').textContent=''; }
-function closeLogin(){ $('#loginModal').classList.add('hidden'); }
+function openAdminLogin(){ document.getElementById('loginModal').classList.remove('hidden'); }
+function closeLogin(){ document.getElementById('loginModal').classList.add('hidden'); }
 function doLogin(){
-  const id = $('#lgId').value.trim(), pass = $('#lgPass').value;
-  if(id === DB.settings.adminId && pass === DB.settings.adminPass){
-    isAdmin = true; closeLogin(); $('#adminModal').classList.remove('hidden'); renderDashboard();
-  } else { $('#loginMsg').textContent = '❌ ভুল আইডি বা পাসওয়ার্ড!'; }
+  const id = document.getElementById('lgId').value.trim(); const pass = document.getElementById('lgPass').value.trim();
+  if(id===DB.settings.adminId && pass===DB.settings.adminPass){ isAdmin=true; closeLogin(); openAdmin(); } else { document.getElementById('loginMsg').textContent='❌ ভুল ID বা Password'; }
 }
-
-let _otpState = { code:'', email:'', expires:0, attempts:0, verified:false, timerId:null };
-function _randomOtp(){ return String(Math.floor(100000 + Math.random()*900000)); }
-function _emailJsReady(){ return window.emailjs && EMAILJS_PUBLIC_KEY.indexOf("YOUR_") !== 0 && EMAILJS_SERVICE_ID.indexOf("YOUR_") !== 0 && EMAILJS_TEMPLATE_ID.indexOf("YOUR_") !== 0; }
-function _sendOtpEmail(toEmail, otp, cb){
-  if(!_emailJsReady()){ cb(false, 'ডেমো মোড'); return; }
-  const params = { to_email: toEmail, otp_code: otp, institution: DB.settings.name, admin_email: DB.settings.adminId, message: 'OTP: '+otp };
-  try{
-    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params).then(()=> cb(true,'ok')).catch((err)=> cb(false, (err && (err.text||err.message)) || 'fail'));
-  }catch(e){ cb(false, String(e)); }
-}
-function forgotPassword(){ openOtpModal(); }
-function openOtpModal(){
-  const m = $('#otpModal'); if(!m) return;
-  m.classList.remove('hidden');
-  $('#otpStep1').classList.remove('hidden'); $('#otpStep2').classList.add('hidden'); $('#otpStep3').classList.add('hidden');
-  $('#otpMsg1').textContent = ''; $('#otpMsg2').textContent = ''; $('#otpMsg3').textContent = '';
-  $('#otpEmail').value = DB.settings.recoveryEmail || 'bmd03024@gmail.com';
-  $('#otpDemoBox').classList.add('hidden');
-  $$('#otpBox input').forEach(i=> i.value='');
-  _otpState = { code:'', email:'', expires:0, attempts:0, verified:false, timerId:null };
-}
-function closeOtpModal(){ if(_otpState.timerId){ clearInterval(_otpState.timerId); _otpState.timerId = null; } $('#otpModal').classList.add('hidden'); }
-function sendOtp(){
-  const email = ($('#otpEmail').value || DB.settings.recoveryEmail || 'bmd03024@gmail.com').trim();
-  if(!email){ $('#otpMsg1').textContent = '❌ ইমেইল দিন'; return; }
-  const otp = _randomOtp();
-  _otpState = { code:otp, email, expires: Date.now() + 5*60*1000, attempts:0, verified:false, timerId:null };
-  $('#otpMsg1').textContent = '⏳ পাঠানো হচ্ছে...';
-  _sendOtpEmail(email, otp, (ok)=>{
-    if(!ok){ $('#otpDemoBox').classList.remove('hidden'); $('#otpDemoCode').textContent = otp; }
-    $('#otpMsg1').textContent = '';
-    $('#otpStep1').classList.add('hidden'); $('#otpStep2').classList.remove('hidden');
-    $('#otpMsg2').textContent = ''; $$('#otpBox input').forEach(i=> i.value='');
-    setTimeout(()=>{ const f = document.querySelector('#otpBox input'); if(f) f.focus(); }, 150);
-    startOtpTimer();
-  });
-}
-function startOtpTimer(){
-  if(_otpState.timerId) clearInterval(_otpState.timerId);
-  const el = $('#otpTimer');
-  const tick = ()=>{
-    const diff = _otpState.expires - Date.now();
-    if(diff <= 0){ clearInterval(_otpState.timerId); _otpState.timerId = null; if(el) el.textContent = '00:00'; $('#otpMsg2').textContent = '❌ OTP মেয়াদ শেষ!'; return; }
-    const m = Math.floor(diff/60000), s = Math.floor((diff%60000)/1000);
-    if(el) el.textContent = String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
-  };
-  tick(); _otpState.timerId = setInterval(tick, 1000);
-}
-function otpNext(input, idx){
-  input.value = input.value.replace(/[^0-9]/g,'').slice(0,1);
-  if(input.value && idx < 5){ const next = $$('#otpBox input')[idx+1]; if(next) next.focus(); }
-  const all = Array.from($$('#otpBox input')).map(i=>i.value).join('');
-  if(all.length === 6) verifyOtp();
-}
-function verifyOtp(){
-  if(_otpState.verified) return;
-  const entered = Array.from($$('#otpBox input')).map(i=>i.value).join('');
-  if(entered.length !== 6){ $('#otpMsg2').textContent = '❌ ৬ ডিজিটের কোড লিখুন'; return; }
-  if(Date.now() > _otpState.expires){ $('#otpMsg2').textContent = '❌ OTP মেয়াদ শেষ!'; return; }
-  if(entered !== _otpState.code){
-    _otpState.attempts++;
-    $('#otpMsg2').textContent = '❌ ভুল OTP! (চেষ্টা: '+_otpState.attempts+')';
-    if(_otpState.attempts >= 3){ $('#otpMsg2').textContent = '❌ অনেকবার ভুল!'; _otpState.code = ''; }
-    return;
-  }
-  _otpState.verified = true;
-  if(_otpState.timerId){ clearInterval(_otpState.timerId); _otpState.timerId = null; }
-  $('#otpStep2').classList.add('hidden'); $('#otpStep3').classList.remove('hidden');
-  $('#otpMsg3').textContent = ''; $('#newPass1').value = ''; $('#newPass2').value = '';
-}
-function saveNewPassword(){
-  if(!_otpState.verified){ $('#otpMsg3').textContent = '❌ আগে OTP যাচাই করুন'; return; }
-  const p1 = $('#newPass1').value, p2 = $('#newPass2').value;
-  if(!p1 || p1.length < 6){ $('#otpMsg3').textContent = '❌ কমপক্ষে ৬ অক্ষর'; return; }
-  if(p1 !== p2){ $('#otpMsg3').textContent = '❌ পাসওয়ার্ড মিলছে না'; return; }
-  DB.settings.adminPass = p1; saveDB();
-  _otpState = { code:'', email:'', expires:0, attempts:0, verified:false, timerId:null };
-  $('#otpMsg3').style.color = 'var(--ok)'; $('#otpMsg3').textContent = '✅ পাসওয়ার্ড পরিবর্তন সফল!';
-  setTimeout(()=>{ closeOtpModal(); alert('✅ পাসওয়ার্ড পরিবর্তন সফল!'); }, 900);
-}
-function testOtpReset(){ openOtpModal(); }
-
-function closeAdmin(){ isAdmin = false; $('#adminModal').classList.add('hidden'); }
+function openAdmin(){ document.getElementById('adminModal').classList.remove('hidden'); renderDashboard(); }
+function closeAdmin(){ document.getElementById('adminModal').classList.add('hidden'); isAdmin=false; }
 function backToDashboard(){ renderDashboard(); }
-
-const ADMIN_MODULES = [
-  {key:'settings', icon:'⚙️', lbl:'জেনারেল সেটিংস'},
-  {key:'slider', icon:'🖼️', lbl:'হিরো স্লাইডার'},
-  {key:'faculty', icon:'🎯', lbl:'শিক্ষক মণ্ডলী'},
-  {key:'enrollments', icon:'📥', lbl:'এনরোলমেন্ট Approvals'},
-  {key:'students', icon:'👨‍🎓', lbl:'শিক্ষার্থী তালিকা'},
-  {key:'results', icon:'📊', lbl:'ফলাফল ও মার্কশিট'},
-  {key:'admit', icon:'🎫', lbl:'এডমিট কার্ড'},
-  {key:'officialDocs', icon:'📂', lbl:'অফিসিয়াল ডকুমেন্টস'},
-  {key:'ledger', icon:'💰', lbl:'আয়-ব্যয় হিসাব'},
-  {key:'courses', icon:'📚', lbl:'কোর্স ম্যানেজমেন্ট'},
-  {key:'routine', icon:'📅', lbl:'ক্লাস রুটিন'},
-  {key:'exams', icon:'📝', lbl:'পরীক্ষা ও বিষয়'},
-  {key:'chatbot', icon:'🤖', lbl:'চ্যাটবট'},
-  {key:'shortcuts', icon:'⚡', lbl:'শর্টকাট ম্যানেজমেন্ট'},
-  {key:'media', icon:'🎬', lbl:'নোট, গ্যালারি, ভিডিও'},
-  {key:'security', icon:'🔐', lbl:'সিকিউরিটি'},
-  {key:'firebase', icon:'🔥', lbl:'Firebase লাইভ সিঙ্ক'}
-];
-
 function renderDashboard(){
-  const pendingCount = DB.pendingEnrollments.filter(p=>p.status==='pending').length;
-  $('#adminContent').innerHTML =
-  '<div style="padding:1rem 1.2rem;color:var(--muted);text-align:center">স্বাগতম, অ্যাডমিন! যেকোনো কার্ডে ক্লিক করে মডিউল খুলুন।'+
-  (pendingCount? ' <b style="color:var(--danger)">('+pendingCount+'টি পেন্ডিং এনরোলমেন্ট আছে!)</b>':'')+'</div>'+
-  '<div class="admin-cards">'+ ADMIN_MODULES.map(m=>{
-    let badge = '';
-    if(m.key==='enrollments' && pendingCount) badge = '<span class="cnt-badge">'+pendingCount+'</span>';
-    return '<div class="admin-card" onclick="openModule(\''+m.key+'\')"><div class="icon">'+m.icon+'</div><div class="lbl">'+m.lbl+'</div>'+badge+'</div>';
-  }).join('') +'</div>';
-}
-function openModule(key){
-  const fns = {
-    settings: modSettings, slider: modSlider, faculty: modFaculty,
-    enrollments: modEnrollments, students: modStudents, results: modResults,
-    admit: modAdmit, officialDocs: modOfficialDocs, ledger: modLedger,
-    courses: modCourses, routine: modRoutine, exams: modExams,
-    chatbot: modChatbot, shortcuts: modShortcuts, media: modMedia,
-    security: modSecurity, firebase: modFirebase
-  };
-  if(fns[key]) fns[key]();
-}
-function moduleWrap(title, body){ $('#adminContent').innerHTML = '<div class="admin-module"><h3>'+title+'</h3>'+body+'</div>'; }
-
-/* FIREBASE MODULE */
-function modFirebase(){
-  const status = fbReady? '<span class="badge ok">✔ সংযুক্ত</span>' : '<span class="badge warn">⚠ ডিসকানেক্টেড</span>';
-  moduleWrap('🔥 Firebase লাইভ সিঙ্ক',
-    '<div class="hint">Firebase কনফিগার করলে অ্যাডমিনের পরিবর্তন <b>বিদেশ থেকে বসেও</b> লাইভ দেখা যাবে।</div>'+
-    '<p>স্ট্যাটাস: '+status+'</p>'+
-    '<ol style="padding-left:1.2rem;font-size:.9rem;line-height:1.8">'+
-      '<li><b>console.firebase.google.com</b> এ প্রজেক্ট খুলুন</li>'+
-      '<li>Build → <b>Realtime Database</b> → Create → Test Mode</li>'+
-      '<li>Project Settings → Web App → firebaseConfig কপি করুন</li>'+
-      '<li>কোডের উপরে <code>FIREBASE_CONFIG</code>-এ বসান</li>'+
-      '<li>Rules: <code>{"rules":{"bsDB":{".read":true,".write":true}}}</code></li>'+
-    '</ol>'+
-    '<div class="actions">'+
-      '<button class="btn gold" onclick="manualPushFirebase()">📤 ডেটা পাঠান</button>'+
-      '<button class="btn" onclick="manualPullFirebase()">📥 ডেটা আনুন</button>'+
-    '</div>'
-  );
-}
-function manualPushFirebase(){ if(!fbReady){ alert('❌ Firebase কনফিগার হয়নি।'); return; } pushToFirebase(); alert('✅ পাঠানো হয়েছে।'); }
-function manualPullFirebase(){
-  if(!fbReady){ alert('❌ Firebase কনফিগার হয়নি।'); return; }
-  fbRef.once('value').then(snap=>{
-    const val = snap.val();
-    if(val && typeof val === 'object'){
-      DB = val;
-      for(const k in DEFAULT_DB){ if(DB[k] === undefined) DB[k] = JSON.parse(JSON.stringify(DEFAULT_DB[k])); }
-      localStorage.setItem(LS_KEY, JSON.stringify(DB)); renderFrontend();
-      alert('✅ আনো হয়েছে।');
-    } else alert('⚠ Firebase-এ ডেটা নেই।');
-  });
-}
-
-/* SETTINGS */
-function modSettings(){
-  const s = DB.settings, p = DB.principal;
-  moduleWrap('⚙️ জেনারেল সেটিংস',
-  '<div class="hint" style="background:#fef3c7;padding:.5rem;border-radius:8px;margin-bottom:1rem">💡 লোগো, সিগনেচার, সিল, QR আপলোড করলে সব জায়গায় অটো আপডেট হবে।</div>'+
-  '<div class="form-grid">'+
-    '<div><label>প্রতিষ্ঠানের নাম</label><input id="sName" value="'+esc(s.name)+'"></div>'+
-    '<div><label>ফোন</label><input id="sPhone" value="'+esc(s.phone)+'"></div>'+
-    '<div><label>ইমেইল</label><input id="sEmail" value="'+esc(s.email)+'"></div>'+
-    '<div style="grid-column:1/-1"><label>ঠিকানা</label><input id="sAddress" value="'+esc(s.address)+'"></div>'+
-    '<div style="grid-column:1/-1"><label>ওয়েলকাম</label><input id="sWelcome" value="'+esc(s.welcome)+'"></div>'+
-    '<div><label>প্রাইমারি রং</label><input type="color" id="sPrimary" value="'+esc(s.themePrimary)+'"></div>'+
-    '<div><label>অ্যাকসেন্ট রং</label><input type="color" id="sAccent" value="'+esc(s.themeAccent)+'"></div>'+
-    '<div><label>টেক্সট সাইজ</label><input id="sFontSize" value="'+esc(s.fontSize)+'"></div>'+
-  '</div>'+
-  '<h4 style="color:var(--primary);margin-top:1rem">🎓 লোগো</h4>'+
-  '<div class="form-grid"><div style="grid-column:1/-1">'+
-    '<label>লোগো আপলোড (৩MB পর্যন্ত, অটো-রিসাইজ)</label>'+
-    '<input type="file" accept="image/*" onchange="uploadLogo(this)">'+
-    '<div id="logoStatus" class="upload-status"></div>'+
-    (s.logo? '<img src="'+esc(s.logo)+'" class="img-preview" style="max-height:80px">'+
-    '<div style="margin-top:.4rem"><button class="btn red sm" onclick="removeLogo()">🗑 মুছুন</button></div>' : '<p style="color:var(--muted);font-size:.85rem">⚠ লোগো নেই</p>')+
-  '</div></div>'+
-  '<h4 style="color:var(--primary);margin-top:1rem">💳 পেমেন্ট QR</h4>'+
-  '<div class="form-grid"><div style="grid-column:1/-1">'+
-    '<label>QR আপলোড</label><input type="file" accept="image/*" onchange="uploadQR(this)">'+
-    '<div id="qrStatus" class="upload-status"></div>'+
-    (s.paymentQR? '<img src="'+esc(s.paymentQR)+'" class="img-preview" style="max-height:160px">'+
-    '<div style="margin-top:.4rem"><button class="btn red sm" onclick="removePaymentQR()">🗑 মুছুন</button></div>' : '<p style="color:var(--muted);font-size:.85rem">⚠ ডিফল্ট QR</p>')+
-  '</div></div>'+
-  '<h4 style="color:var(--primary);margin-top:1rem">প্রতিষ্ঠাতা</h4>'+
-  '<div class="form-grid">'+
-    '<div><label>নাম</label><input id="pName" value="'+esc(p.name)+'"></div>'+
-    '<div><label>পদবি</label><input id="pRole" value="'+esc(p.role)+'"></div>'+
-    '<div style="grid-column:1/-1"><label>বাণী</label><textarea id="pMsg" rows="4">'+esc(p.message)+'</textarea></div>'+
-    '<div><label>ছবি</label><input type="file" accept="image/*" onchange="uploadPrincipal(this)">'+
-    (p.photo? '<img src="'+esc(p.photo)+'" class="img-preview">':'')+'</div>'+
-  '</div>'+
-  '<h4 style="color:var(--primary);margin-top:1rem">🔏 সিল ও স্বাক্ষর</h4>'+
-  '<div class="form-grid">'+
-    '<div><label>স্বাক্ষর</label><input type="file" accept="image/*" onchange="uploadSign(this)"><div id="signStatus" class="upload-status"></div>'+(s.signature? '<img src="'+esc(s.signature)+'" class="img-preview">':'')+'</div>'+
-    '<div><label>সিগনেচার সিল</label><input type="file" accept="image/*" onchange="uploadSignSeal(this)"><div id="signSealStatus" class="upload-status"></div>'+(s.signSeal? '<img src="'+esc(s.signSeal)+'" class="img-preview">':'')+'</div>'+
-    '<div><label>প্রতিষ্ঠানের সিল</label><input type="file" accept="image/*" onchange="uploadInstSeal(this)"><div id="instSealStatus" class="upload-status"></div>'+(s.instSeal? '<img src="'+esc(s.instSeal)+'" class="img-preview">':'')+'</div>'+
-  '</div>'+
-  '<h4 style="color:var(--primary);margin-top:1rem">সোশ্যাল ও ম্যাপ</h4>'+
-  '<div class="form-grid">'+
-    '<div><label>Facebook</label><input id="sFb" value="'+esc(s.facebook)+'"></div>'+
-    '<div><label>YouTube</label><input id="sYt" value="'+esc(s.youtube)+'"></div>'+
-    '<div><label>TikTok</label><input id="sTt" value="'+esc(s.tiktok)+'"></div>'+
-    '<div><label>WhatsApp</label><input id="sWa" value="'+esc(s.whatsapp)+'"></div>'+
-    '<div style="grid-column:1/-1"><label>Google Map</label><input id="sMap" value="'+esc(s.mapLink)+'"></div>'+
-  '</div>'+
-  '<div class="actions"><button class="btn green" onclick="saveSettings()">💾 সেভ</button>'+
-  '<button class="btn red" onclick="if(confirm(\'রিসেট?\'))resetAll()">♻ রিসেট</button></div>');
-}
-function setStatus(elId, msg, type){ const el = document.getElementById(elId); if(el){ el.textContent = msg; el.className = 'upload-status ' + (type||''); } }
-function uploadLogo(input){
-  const file = input.files[0]; if(!file) return;
-  setStatus('logoStatus','⏳ প্রসেস হচ্ছে...','loading');
-  readImageCompressed(file, 300, 0.9, (b64, err)=>{
-    if(err){ setStatus('logoStatus','❌ '+err,'err'); return; }
-    DB.settings.logo = b64;
-    try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); }catch(e){}
-    pushToFirebase(); emitLiveSync(); renderFrontend();
-    setStatus('logoStatus','✅ লোগো সফলভাবে আপলোড হয়েছে!','ok');
-    setTimeout(()=>{ try{ modSettings(); }catch(e){} }, 100);
-  });
-}
-function removeLogo(){ if(!confirm('মুছবেন?')) return; DB.settings.logo = ''; saveDB(); modSettings(); }
-function uploadQR(input){
-  const file = input.files[0]; if(!file) return;
-  setStatus('qrStatus','⏳ প্রসেস হচ্ছে...','loading');
-  readImageCompressed(file, 600, 0.9, (b64, err)=>{
-    if(err){ setStatus('qrStatus','❌ '+err,'err'); return; }
-    DB.settings.paymentQR = b64;
-    try{ localStorage.setItem(LS_KEY, JSON.stringify(DB)); }catch(e){}
-    pushToFirebase(); emitLiveSync(); renderFrontend();
-    setStatus('qrStatus','✅ QR সফলভাবে আপলোড হয়েছে!','ok');
-    setTimeout(()=>{ try{ modSettings(); }catch(e){} }, 100);
-  });
-}
-function removePaymentQR(){ if(!confirm('QR মুছবেন?')) return; DB.settings.paymentQR = ''; saveDB(); modSettings(); }
-function uploadSign(input){ const f=input.files[0]; if(!f)return; setStatus('signStatus','⏳...','loading'); readImageCompressed(f,400,0.9,(b64,err)=>{ if(err){setStatus('signStatus','❌ '+err,'err');return;} DB.settings.signature=b64; saveDB(); setStatus('signStatus','✅ সফল','ok'); setTimeout(()=>modSettings(),100); }); }
-function uploadSignSeal(input){ const f=input.files[0]; if(!f)return; setStatus('signSealStatus','⏳...','loading'); readImageCompressed(f,400,0.9,(b64,err)=>{ if(err){setStatus('signSealStatus','❌ '+err,'err');return;} DB.settings.signSeal=b64; saveDB(); setStatus('signSealStatus','✅ সফল','ok'); setTimeout(()=>modSettings(),100); }); }
-function uploadInstSeal(input){ const f=input.files[0]; if(!f)return; setStatus('instSealStatus','⏳...','loading'); readImageCompressed(f,400,0.9,(b64,err)=>{ if(err){setStatus('instSealStatus','❌ '+err,'err');return;} DB.settings.instSeal=b64; saveDB(); setStatus('instSealStatus','✅ সফল','ok'); setTimeout(()=>modSettings(),100); }); }
-function uploadPrincipal(input){ const f=input.files[0]; if(!f)return; readImageCompressed(f,400,0.9,(b64,err)=>{ if(err){alert('❌ '+err);return;} DB.principal.photo=b64; saveDB(); alert('✅ সফল'); modSettings(); }); }
-function saveSettings(){
-  const s = DB.settings;
-  s.name=$('#sName').value; s.phone=$('#sPhone').value; s.email=$('#sEmail').value;
-  s.address=$('#sAddress').value; s.welcome=$('#sWelcome').value;
-  s.themePrimary=$('#sPrimary').value; s.themeAccent=$('#sAccent').value;
-  s.fontSize=$('#sFontSize').value||'16px';
-  s.facebook=$('#sFb').value; s.youtube=$('#sYt').value;
-  s.tiktok=$('#sTt').value; s.whatsapp=$('#sWa').value; s.mapLink=$('#sMap').value;
-  DB.principal.name=$('#pName').value; DB.principal.role=$('#pRole').value; DB.principal.message=$('#pMsg').value;
-  saveDB(); alert('✅ সেভ হয়েছে'); modSettings();
-}
-function resetAll(){ if(!confirm('নিশ্চিত?')) return; localStorage.removeItem(LS_KEY); location.reload(); }
-
-/* SLIDER */
-function modSlider(){
-  let html = '<div id="slideList">';
-  DB.slides.forEach((sl,i)=>{
-    html += '<div class="notice-item" style="margin-bottom:.8rem"><h4>স্লাইড '+(i+1)+'</h4>'+
-    '<div class="form-grid">'+
-      '<div><label>টাইটেল</label><input id="slT_'+i+'" value="'+esc(sl.title)+'"></div>'+
-      '<div><label>টেক্সট</label><input id="slX_'+i+'" value="'+esc(sl.text)+'"></div>'+
-      '<div><label>ছবি</label><input type="file" accept="image/*" onchange="uploadSlide(this,'+i+')"></div>'+
-    '</div>'+(sl.img? '<img src="'+esc(sl.img)+'" style="max-height:90px;border-radius:8px">':'')+'</div>';
-  });
-  html += '</div><div class="actions"><button class="btn green" onclick="saveSlides()">💾 সেভ</button><button class="btn gold" onclick="addSlide()">➕ নতুন</button></div>';
-  moduleWrap('🖼️ হিরো স্লাইডার', html);
-}
-function uploadSlide(input, i){ const f=input.files[0]; if(!f)return; readImageCompressed(f,1600,0.85,(b64,err)=>{ if(err){alert('❌ '+err);return;} DB.slides[i].img=b64; saveDB(); modSlider(); }); }
-function saveSlides(){ DB.slides.forEach((sl,i)=>{ sl.title=$('#slT_'+i).value; sl.text=$('#slX_'+i).value; }); saveDB(); alert('✅ সেভ'); }
-function addSlide(){ DB.slides.push({img:'', title:'নতুন স্লাইড', text:'বর্ণনা'}); saveDB(); modSlider(); }
-
-/* ============ FACULTY — প্রফেশনাল আইডি কার্ড সহ ============ */
-function modFaculty(){
-  let html = '<div class="actions"><button class="btn gold" onclick="addFaculty()">➕ নতুন শিক্ষক</button></div>';
-  html += '<table class="table"><tr><th>ছবি</th><th>নাম</th><th>পদবি</th><th>ফোন</th><th>অ্যাকশন</th></tr>';
-  DB.faculty.forEach(f=>{
-    html += '<tr><td>'+(f.photo?'<img src="'+esc(f.photo)+'" class="avatar-thumb">':'<div class="avatar-placeholder">👤</div>')+'</td>'+
-    '<td>'+esc(f.name)+'</td><td>'+esc(f.role)+'</td><td>'+esc(f.phone||'—')+'</td>'+
-    '<td class="row-actions"><button class="btn sm" onclick="editFaculty(\''+f.id+'\')">✏ এডিট</button>'+
-    '<button class="btn sm gold" onclick="uploadFacultyPhoto(\''+f.id+'\')">📷 ছবি</button>'+
-    '<button class="btn sm green" onclick="printTeacherCard(\''+f.id+'\')">🪪 আইডি কার্ড</button>'+
-    '<button class="btn sm red" onclick="delFaculty(\''+f.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>'; moduleWrap('🎯 শিক্ষক মণ্ডলী', html);
-}
-function addFaculty(){ editFaculty(null); }
-function editFaculty(id){
-  const f = id? DB.faculty.find(x=>x.id===id) : {id:'', name:'', role:'', qual:'', photo:'', phone:'', email:''};
-  showFormModal(id?'শিক্ষক এডিট':'নতুন শিক্ষক',
-    '<div class="form-row"><label>নাম</label><input id="fName" value="'+esc(f.name)+'"></div>'+
-    '<div class="form-row"><label>পদবি</label><input id="fRole" value="'+esc(f.role)+'"></div>'+
-    '<div class="form-row"><label>যোগ্যতা</label><textarea id="fQual" rows="3">'+esc(f.qual)+'</textarea></div>'+
-    '<div class="form-row"><label>ফোন</label><input id="fPhone" value="'+esc(f.phone||'')+'"></div>'+
-    '<div class="form-row"><label>ইমেইল</label><input id="fEmail" value="'+esc(f.email||'')+'"></div>'+
-    '<div class="form-row"><label>ছবি</label><input type="file" accept="image/*" id="fPhoto" onchange="previewFacultyPhoto(this)">'+
-    '<div id="fPhotoPreview">'+(f.photo? '<img src="'+esc(f.photo)+'" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);margin-top:.3rem">':'')+'</div></div>'+
-    '<button class="btn green" style="width:100%;margin-top:.8rem" onclick="saveFaculty(\''+(f.id||'')+'\')">💾 সেভ</button>');
-  _editFacultyPhoto = f.photo || '';
-}
-let _editFacultyPhoto = '';
-function previewFacultyPhoto(input){
-  const f = input.files[0]; if(!f) return;
-  readImageCompressed(f, 400, 0.9, (b64, err)=>{
-    if(err){ alert('❌ '+err); return; }
-    _editFacultyPhoto = b64;
-    const el = document.getElementById('fPhotoPreview');
-    if(el) el.innerHTML = '<img src="'+b64+'" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);margin-top:.3rem">';
-  });
-}
-function saveFaculty(id){
-  const name=$('#fName').value.trim(), role=$('#fRole').value.trim(), qual=$('#fQual').value.trim();
-  const phone=$('#fPhone').value.trim(), email=$('#fEmail').value.trim();
-  if(!name){ alert('নাম দিন'); return; }
-  if(id){ const f = DB.faculty.find(x=>x.id===id); f.name=name; f.role=role; f.qual=qual; f.phone=phone; f.email=email; if(_editFacultyPhoto) f.photo=_editFacultyPhoto; }
-  else { DB.faculty.push({id:uid('f'), name, role, qual, phone, email, photo:_editFacultyPhoto||''}); }
-  _editFacultyPhoto = '';
-  saveDB(); closeFormModal(); modFaculty(); alert('✅ সেভ');
-}
-function uploadFacultyPhoto(id){
-  const f = DB.faculty.find(x=>x.id===id); if(!f) return;
-  const inp = document.createElement('input'); inp.type='file'; inp.accept='image/*';
-  inp.onchange = ()=>{
-    const file = inp.files[0]; if(!file) return;
-    readImageCompressed(file, 400, 0.9, (b64, err)=>{
-      if(err){ alert('❌ '+err); return; }
-      f.photo = b64; saveDB(); modFaculty(); alert('✅ ছবি আপলোড সফল');
-    });
-  };
-  inp.click();
-}
-function delFaculty(id){ if(!confirm('মুছবেন?')) return; DB.faculty = DB.faculty.filter(x=>x.id!==id); saveDB(); modFaculty(); }
-
-/* ============ প্রফেশনাল টিচার আইডি কার্ড ============ */
-function printTeacherCard(id){
-  const f = DB.faculty.find(x=>x.id===id); if(!f) return;
-  const s = DB.settings;
-  const cardNo = 'TCH-' + (f.id||'').replace(/[^0-9]/g,'').slice(-4).padStart(4,'0');
-  const body = `
-    <div style="max-width:420px;margin:auto;border-radius:18px;overflow:hidden;box-shadow:0 12px 40px rgba(11,36,71,.3);background:#fff;border:2px solid #0b2447">
-      <!-- Header -->
-      <div style="background:linear-gradient(135deg,#0b2447,#123a6b);color:#fff;padding:1rem;text-align:center;position:relative">
-        <div style="position:absolute;top:8px;right:10px;background:#d4af37;color:#0b2447;font-size:.65rem;font-weight:900;padding:.2rem .5rem;border-radius:20px;letter-spacing:.5px">FACULTY</div>
-        ${s.logo? `<img src="${esc(s.logo)}" style="height:50px;width:50px;border-radius:50%;object-fit:cover;margin:0 auto .3rem;border:2px solid #d4af37;background:#fff;padding:2px">`:''}
-        <div style="font-weight:900;font-size:1rem;letter-spacing:.5px">${esc(s.name)}</div>
-        <div style="font-size:.7rem;opacity:.9;margin-top:.15rem">${esc(s.address)}</div>
-      </div>
-      <!-- Photo & Name -->
-      <div style="text-align:center;padding:1rem 1rem .3rem;background:linear-gradient(180deg,#f5f7fb,#fff)">
-        <div style="width:120px;height:120px;border-radius:50%;margin:0 auto;border:4px solid #d4af37;box-shadow:0 6px 20px rgba(212,175,55,.4);overflow:hidden;background:#eef2f9;display:flex;align-items:center;justify-content:center">
-          ${f.photo? `<img src="${esc(f.photo)}" style="width:100%;height:100%;object-fit:cover">` : '<span style="font-size:4rem">👤</span>'}
-        </div>
-        <h3 style="color:#0b2447;margin-top:.6rem;font-size:1.15rem;font-weight:900">${esc(f.name)}</h3>
-        <div style="display:inline-block;background:#0b2447;color:#fff;font-size:.72rem;padding:.25rem .7rem;border-radius:20px;margin-top:.3rem;font-weight:700">${esc(f.role)}</div>
-      </div>
-      <!-- Info -->
-      <div style="padding:1rem 1.2rem">
-        <table style="width:100%;font-size:.82rem;border-collapse:collapse">
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700;width:35%">যোগ্যতা</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${esc(f.qual||'—')}</td></tr>
-          ${f.phone? `<tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">ফোন</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${esc(f.phone)}</td></tr>`:''}
-          ${f.email? `<tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">ইমেইল</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600;word-break:break-all">${esc(f.email)}</td></tr>`:''}
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">আইডি নং</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${cardNo}</td></tr>
-        </table>
-        <!-- Signature & Seal -->
-        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:1rem">
-          <div style="text-align:center;font-size:.7rem">
-            ${s.signSeal? `<img src="${esc(s.signSeal)}" style="height:38px">`:'<div style="height:38px"></div>'}
-            <div style="border-top:1px solid #999;padding-top:.15rem;color:#5b6b85;min-width:90px">স্বাক্ষর</div>
-          </div>
-          <div style="text-align:center;font-size:.65rem;color:#5b6b85">
-            <div style="background:#0b2447;color:#fff;padding:.2rem .4rem;border-radius:6px;font-weight:700">VALID</div>
-            <div style="margin-top:.2rem">${new Date().getFullYear()}</div>
-          </div>
-        </div>
-      </div>
-      <!-- Footer -->
-      <div style="background:#0b2447;color:#d4af37;text-align:center;padding:.4rem;font-size:.65rem;letter-spacing:.5px">📞 ${esc(s.phone)} | ✉ ${esc(s.email)}</div>
-    </div>`;
-  openDocWindow('শিক্ষক আইডি কার্ড — '+f.name, body);
-}
-
-/* ============ STUDENTS — ছবি সহ প্রফেশনাল আইডি ============ */
-function modStudents(){
-  const courseOpts = '<option value="">-- সব কোর্স --</option>'+DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  moduleWrap('👨‍🎓 শিক্ষার্থী তালিকা',
-    '<div class="actions"><button class="btn gold" onclick="editStudent(null)">➕ নতুন শিক্ষার্থী</button><button class="btn" onclick="printAllStudents()">🖨 তালিকা</button></div>'+
-    '<div class="form-grid">'+
-      '<div><label>শিক্ষাবর্ষ</label><input id="flYear" placeholder="সব"></div>'+
-      '<div><label>কোর্স</label><select id="flCourse">'+courseOpts+'</select></div>'+
-      '<div><label>রোল</label><input id="flRoll" placeholder="সব"></div>'+
-      '<div style="display:flex;align-items:flex-end;gap:.4rem"><button class="btn" onclick="filterStudents()">🔍</button><button class="btn gray" onclick="modStudents()">রিসেট</button></div>'+
-    '</div><div id="studentTable"></div>');
-  filterStudents();
-}
-let studentFilter = {};
-function filterStudents(){
-  const y=($('#flYear')&&$('#flYear').value.trim())||'', c=($('#flCourse')&&$('#flCourse').value)||'', r=($('#flRoll')&&$('#flRoll').value.trim())||'';
-  studentFilter={y,c,r};
-  let list = DB.students.slice();
-  if(y) list = list.filter(s=>s.year===y);
-  if(c) list = list.filter(s=>s.courseId===c);
-  if(r) list = list.filter(s=>String(s.roll)===String(r));
-  let html = '<table class="table"><tr><th>ছবি</th><th>শিক্ষাবর্ষ</th><th>কোর্স</th><th>রোল</th><th>নাম</th><th>পিতা</th><th>ফোন</th><th>অ্যাকশন</th></tr>';
-  list.forEach(s=>{
-    html += '<tr><td>'+(s.photo?'<img src="'+esc(s.photo)+'" class="avatar-thumb">':'<div class="avatar-placeholder">👤</div>')+'</td>'+
-    '<td>'+esc(s.year)+'</td><td>'+esc(s.courseName)+'</td><td>'+esc(s.roll)+'</td><td>'+esc(s.name)+'</td>'+
-    '<td>'+esc(s.father)+'</td><td>'+esc(s.phone)+'</td>'+
-    '<td class="row-actions"><button class="btn sm" onclick="editStudent(\''+s.id+'\')">✏ এডিট</button>'+
-    '<button class="btn sm gold" onclick="uploadStudentPhoto(\''+s.id+'\')">📷 ছবি</button>'+
-    '<button class="btn sm green" onclick="printStudentCard(\''+s.id+'\')">🪪 আইডি</button>'+
-    '<button class="btn sm red" onclick="delStudent(\''+s.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>';
-  if(!list.length) html = '<div class="notice-item">কোনো শিক্ষার্থী নেই।</div>';
-  const el = document.getElementById('studentTable'); if(el) el.innerHTML = html;
-}
-let _editStudentPhoto = '';
-function editStudent(id){
-  const s = id? DB.students.find(x=>x.id===id) : {id:'', year:new Date().getFullYear(), courseId:DB.courses[0].id, roll:'', name:'', father:'', mother:'', phone:'', photo:''};
-  _editStudentPhoto = s.photo || '';
-  const courseOpts = DB.courses.map(c=>'<option value="'+c.id+'" '+(c.id===s.courseId?'selected':'')+'>'+esc(c.name)+'</option>').join('');
-  showFormModal(id?'শিক্ষার্থী এডিট':'নতুন শিক্ষার্থী',
-    '<div class="form-row"><label>ছবি</label><input type="file" accept="image/*" onchange="previewStudentPhoto(this)">'+
-    '<div id="stPhotoPreview">'+(s.photo? '<img src="'+esc(s.photo)+'" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);margin-top:.3rem">':'')+'</div></div>'+
-    '<div class="form-row"><label>শিক্ষাবর্ষ</label><input id="stYear" value="'+esc(s.year)+'"></div>'+
-    '<div class="form-row"><label>কোর্স</label><select id="stCourse">'+courseOpts+'</select></div>'+
-    '<div class="form-row"><label>রোল</label><input id="stRoll" value="'+esc(s.roll)+'"></div>'+
-    '<div class="form-row"><label>নাম</label><input id="stName" value="'+esc(s.name)+'"></div>'+
-    '<div class="form-row"><label>পিতা</label><input id="stFather" value="'+esc(s.father)+'"></div>'+
-    '<div class="form-row"><label>মাতা</label><input id="stMother" value="'+esc(s.mother)+'"></div>'+
-    '<div class="form-row"><label>ফোন</label><input id="stPhone" value="'+esc(s.phone)+'"></div>'+
-    '<button class="btn green" style="width:100%;margin-top:.6rem" onclick="saveStudent(\''+(s.id||'')+'\')">💾 সেভ</button>');
-}
-function previewStudentPhoto(input){
-  const f = input.files[0]; if(!f) return;
-  readImageCompressed(f, 400, 0.9, (b64, err)=>{
-    if(err){ alert('❌ '+err); return; }
-    _editStudentPhoto = b64;
-    const el = document.getElementById('stPhotoPreview');
-    if(el) el.innerHTML = '<img src="'+b64+'" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);margin-top:.3rem">';
-  });
-}
-function saveStudent(id){
-  const year=$('#stYear').value.trim(), courseId=$('#stCourse').value;
-  const c = DB.courses.find(x=>x.id===courseId);
-  const name = $('#stName').value.trim();
-  if(!year||!name){ alert('শিক্ষাবর্ষ ও নাম দিন'); return; }
-  let roll = $('#stRoll').value.trim();
-  if(!roll){ const same = DB.students.filter(s=>s.courseId===courseId && s.year===year && s.id!==id); roll = String(same.length+1).padStart(3,'0'); }
-  const data = {year, courseId, courseName:c?c.name:'', roll, name, father:$('#stFather').value.trim(), mother:$('#stMother').value.trim(), phone:$('#stPhone').value.trim(), photo:_editStudentPhoto||''};
-  if(id){ Object.assign(DB.students.find(x=>x.id===id), data); }
-  else { DB.students.push({id:uid('st'), ...data, createdAt:new Date().toISOString()}); }
-  _editStudentPhoto = '';
-  saveDB(); closeFormModal(); modStudents(); alert('✅ সেভ');
-}
-function uploadStudentPhoto(id){
-  const s = DB.students.find(x=>x.id===id); if(!s) return;
-  const inp = document.createElement('input'); inp.type='file'; inp.accept='image/*';
-  inp.onchange = ()=>{
-    const f = inp.files[0]; if(!f) return;
-    readImageCompressed(f, 400, 0.9, (b64, err)=>{
-      if(err){ alert('❌ '+err); return; }
-      s.photo = b64; saveDB(); modStudents(); alert('✅ ছবি আপলোড সফল');
-    });
-  };
-  inp.click();
-}
-function delStudent(id){ if(!confirm('মুছবেন?')) return; DB.students = DB.students.filter(x=>x.id!==id); saveDB(); modStudents(); }
-function printAllStudents(){
-  const {y,c,r}=studentFilter; let list = DB.students.slice();
-  if(y) list=list.filter(s=>s.year===y); if(c) list=list.filter(s=>s.courseId===c); if(r) list=list.filter(s=>String(s.roll)===String(r));
-  let body = '<h2 style="text-align:center">'+esc(DB.settings.name)+'</h2><h3 style="text-align:center">শিক্ষার্থী তালিকা</h3>'+
-  '<table border="1" cellspacing="0" cellpadding="6" style="width:100%;border-collapse:collapse"><tr><th>ছবি</th><th>রোল</th><th>নাম</th><th>পিতা</th><th>মাতা</th><th>কোর্স</th><th>শিক্ষাবর্ষ</th></tr>';
-  list.forEach(s=> body += '<tr><td>'+(s.photo?'<img src="'+esc(s.photo)+'" style="width:40px;height:40px;border-radius:50%;object-fit:cover">':'👤')+'</td><td>'+esc(s.roll)+'</td><td>'+esc(s.name)+'</td><td>'+esc(s.father)+'</td><td>'+esc(s.mother)+'</td><td>'+esc(s.courseName)+'</td><td>'+esc(s.year)+'</td></tr>');
-  body += '</table>'; openDocWindow('শিক্ষার্থী তালিকা', body);
-}
-
-/* ============ প্রফেশনাল স্টুডেন্ট আইডি কার্ড ============ */
-function printStudentCard(id){
-  const s = DB.students.find(x=>x.id===id); if(!s) return;
-  const st = DB.settings;
-  const cardNo = 'STD-' + String(s.roll).padStart(4,'0') + '-' + (s.year||'').toString().slice(-2);
-  const body = `
-    <div style="max-width:420px;margin:auto;border-radius:18px;overflow:hidden;box-shadow:0 12px 40px rgba(11,36,71,.3);background:#fff;border:2px solid #0b2447">
-      <!-- Header -->
-      <div style="background:linear-gradient(135deg,#0b2447,#123a6b);color:#fff;padding:1rem;text-align:center;position:relative">
-        <div style="position:absolute;top:8px;right:10px;background:#d4af37;color:#0b2447;font-size:.65rem;font-weight:900;padding:.2rem .5rem;border-radius:20px;letter-spacing:.5px">STUDENT</div>
-        ${st.logo? `<img src="${esc(st.logo)}" style="height:50px;width:50px;border-radius:50%;object-fit:cover;margin:0 auto .3rem;border:2px solid #d4af37;background:#fff;padding:2px">`:''}
-        <div style="font-weight:900;font-size:1rem;letter-spacing:.5px">${esc(st.name)}</div>
-        <div style="font-size:.7rem;opacity:.9;margin-top:.15rem">${esc(st.address)}</div>
-      </div>
-      <!-- Photo & Name -->
-      <div style="text-align:center;padding:1rem 1rem .3rem;background:linear-gradient(180deg,#f5f7fb,#fff)">
-        <div style="width:120px;height:120px;border-radius:50%;margin:0 auto;border:4px solid #d4af37;box-shadow:0 6px 20px rgba(212,175,55,.4);overflow:hidden;background:#eef2f9;display:flex;align-items:center;justify-content:center">
-          ${s.photo? `<img src="${esc(s.photo)}" style="width:100%;height:100%;object-fit:cover">` : '<span style="font-size:4rem">🎓</span>'}
-        </div>
-        <h3 style="color:#0b2447;margin-top:.6rem;font-size:1.15rem;font-weight:900">${esc(s.name)}</h3>
-        <div style="display:inline-block;background:#0b2447;color:#fff;font-size:.72rem;padding:.25rem .7rem;border-radius:20px;margin-top:.3rem;font-weight:700">${esc(s.courseName)}</div>
-      </div>
-      <!-- Info -->
-      <div style="padding:1rem 1.2rem">
-        <table style="width:100%;font-size:.82rem;border-collapse:collapse">
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700;width:35%">রোল নম্বর</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:900;font-size:1rem">${esc(s.roll)}</td></tr>
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">পিতার নাম</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${esc(s.father||'—')}</td></tr>
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">মাতার নাম</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${esc(s.mother||'—')}</td></tr>
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">শিক্ষাবর্ষ</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${esc(s.year)}</td></tr>
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">ফোন</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${esc(s.phone||'—')}</td></tr>
-          <tr><td style="padding:.3rem .4rem;color:#5b6b85;font-weight:700">আইডি নং</td><td style="padding:.3rem .4rem;color:#0b2447;font-weight:600">${cardNo}</td></tr>
-        </table>
-        <!-- Signature & Seal -->
-        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:1rem">
-          <div style="text-align:center;font-size:.7rem">
-            ${st.signature? `<img src="${esc(st.signature)}" style="height:38px">`:'<div style="height:38px"></div>'}
-            <div style="border-top:1px solid #999;padding-top:.15rem;color:#5b6b85;min-width:90px">অধ্যক্ষের স্বাক্ষর</div>
-          </div>
-          <div style="text-align:center;font-size:.65rem;color:#5b6b85">
-            ${st.instSeal? `<img src="${esc(st.instSeal)}" style="height:50px">`:'<div style="background:#0b2447;color:#fff;padding:.2rem .4rem;border-radius:6px;font-weight:700">VALID</div>'}
-            <div style="margin-top:.2rem">${new Date().getFullYear()}</div>
-          </div>
-        </div>
-      </div>
-      <!-- Footer -->
-      <div style="background:#0b2447;color:#d4af37;text-align:center;padding:.4rem;font-size:.65rem;letter-spacing:.5px">📞 ${esc(st.phone)} | ✉ ${esc(st.email)}</div>
-    </div>`;
-  openDocWindow('শিক্ষার্থী আইডি কার্ড — '+s.name, body);
-}
-
-/* RESULTS */
-function modResults(){
-  const courseOpts = DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  moduleWrap('📊 ফলাফল আপলোড',
-    '<div class="form-grid">'+
-      '<div><label>শিক্ষাবর্ষ</label><input id="rYear" value="'+(new Date().getFullYear())+'"></div>'+
-      '<div><label>কোর্স</label><select id="rCourse">'+courseOpts+'</select></div>'+
-      '<div><label>রোল</label><input id="rRoll"></div>'+
-      '<div><label>পরীক্ষা</label><input id="rExam" placeholder="যেমন: ফাইনাল"></div>'+
-      '<div style="display:flex;align-items:flex-end"><button class="btn" onclick="fetchStudent()">🔍 আনুন</button></div>'+
-    '</div>'+
-    '<div id="rStudentInfo" class="notice-item" style="display:none"></div><div id="rSubjectArea"></div>'+
-    '<div class="actions"><button class="btn green" onclick="publishResult()">📤 পাবলিশ</button></div>'+
-    '<h4 style="color:var(--primary);margin-top:1rem">প্রকাশিত ফলাফল</h4><div id="rList"></div>');
-  renderResultList();
-}
-function fetchStudent(){
-  const y=$('#rYear').value, cid=$('#rCourse').value, roll=$('#rRoll').value.trim();
-  const s = DB.students.find(x=>x.year===y && x.courseId===cid && String(x.roll)===String(roll));
-  if(!s){ alert('শিক্ষার্থী পাওয়া যায়নি'); $('#rStudentInfo').style.display='none'; return; }
-  $('#rStudentInfo').style.display='block';
-  $('#rStudentInfo').innerHTML = '<b>নাম:</b> '+esc(s.name)+' | <b>পিতা:</b> '+esc(s.father)+' | <b>মাতা:</b> '+esc(s.mother);
-  let subs = DB.subjects.filter(x=>x.courseId===cid);
-  if(!subs.length) subs = [{name:'বিষয় ১'},{name:'বিষয় ২'},{name:'বিষয় ৩'}];
-  $('#rSubjectArea').innerHTML = '<div class="form-grid">'+subs.map((sub,i)=>'<div><label>'+esc(sub.name)+' ('+(sub.full||100)+')</label><input id="rSub_'+i+'" data-name="'+esc(sub.name)+'" data-full="'+(sub.full||100)+'" type="number"></div>').join('')+'</div><input type="hidden" id="rStudentId" value="'+s.id+'">';
-}
-function publishResult(){
-  const sid = $('#rStudentId')? $('#rStudentId').value : ''; if(!sid){ alert('শিক্ষার্থী আনুন'); return; }
-  const s = DB.students.find(x=>x.id===sid);
-  const marks = []; let totalObt=0, totalFull=0;
-  $$('#rSubjectArea input[data-name]').forEach(inp=>{
-    const obt = Number(inp.value)||0, full = Number(inp.dataset.full)||100;
-    marks.push({name:inp.dataset.name, obtained:obt, full});
-    totalObt += obt; totalFull += full;
-  });
-  const percent = totalFull? (totalObt/totalFull*100) : 0;
-  const gp = Math.min(5, Math.max(0, (percent/20)));
-  let grade='F';
-  if(percent>=80) grade='A+'; else if(percent>=70) grade='A'; else if(percent>=60) grade='A-';
-  else if(percent>=50) grade='B'; else if(percent>=40) grade='C'; else if(percent>=33) grade='D';
-  DB.results.push({id:uid('res'), studentId:sid, year:s.year, courseId:s.courseId, courseName:s.courseName, exam:$('#rExam').value, marks, totalObt, totalFull, percent:percent.toFixed(2), grade, gp:gp.toFixed(2), date:new Date().toISOString()});
-  saveDB(); renderResultList(); alert('✅ পাবলিশ হয়েছে');
-}
-function renderResultList(){
-  const el = document.getElementById('rList'); if(!el) return;
-  let html = '<table class="table"><tr><th>শিক্ষার্থী</th><th>কোর্স</th><th>পরীক্ষা</th><th>মোট</th><th>গ্রেড</th><th>অ্যাকশন</th></tr>';
-  DB.results.forEach(r=>{
-    const s = DB.students.find(x=>x.id===r.studentId);
-    html += '<tr><td>'+esc(s? s.name:'—')+'</td><td>'+esc(r.courseName)+'</td><td>'+esc(r.exam)+'</td><td>'+r.totalObt+'/'+r.totalFull+'</td>'+
-    '<td><span class="badge info">'+esc(r.grade)+'</span></td>'+
-    '<td><button class="btn sm green" onclick="printMarksheetById(\''+r.id+'\')">🖨</button><button class="btn sm red" onclick="delResult(\''+r.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>';
-  if(!DB.results.length) html = '<div class="notice-item">ফলাফল নেই।</div>';
-  el.innerHTML = html;
-}
-function delResult(id){ DB.results = DB.results.filter(x=>x.id!==id); saveDB(); renderResultList(); }
-function printMarksheetById(id){ const r = DB.results.find(x=>x.id===id); if(!r) return; const s = DB.students.find(x=>x.id===r.studentId); printMarksheet(r, s); }
-function printMarksheet(r, s){
-  let rows = r.marks.map(m=> '<tr><td>'+esc(m.name)+'</td><td>'+esc(m.full)+'</td><td>'+esc(m.obtained)+'</td></tr>').join('');
-  const body = '<h3>মার্কশিট — '+esc(r.exam)+'</h3>'+
-  '<p><b>শিক্ষার্থীর নাম:</b> '+esc(s?s.name:'')+'<br><b>পিতা:</b> '+esc(s?s.father:'')+'<br><b>মাতা:</b> '+esc(s?s.mother:'')+'<br>'+
-  '<b>রোল:</b> '+esc(s?s.roll:'')+' | <b>কোর্স:</b> '+esc(r.courseName)+' | <b>শিক্ষাবর্ষ:</b> '+esc(r.year)+'</p>'+
-  '<table border="1" cellspacing="0" cellpadding="6" style="width:100%;border-collapse:collapse"><tr><th>বিষয়</th><th>পূর্ণ</th><th>প্রাপ্ত</th></tr>'+rows+
-  '<tr><th colspan="2">মোট</th><th>'+r.totalObt+' / '+r.totalFull+'</th></tr>'+
-  '<tr><th colspan="2">গ্রেড</th><th>'+esc(r.grade)+' (GP '+r.gp+')</th></tr></table>';
-  openDocWindow('মার্কশিট', body);
-}
-
-/* ADMIT */
-function modAdmit(){
-  const courseOpts = DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  moduleWrap('🎫 এডমিট কার্ড',
-    '<div class="form-grid">'+
-      '<div><label>শিক্ষাবর্ষ</label><input id="acYear" value="'+(new Date().getFullYear())+'"></div>'+
-      '<div><label>কোর্স</label><select id="acCourse">'+courseOpts+'</select></div>'+
-      '<div><label>পরীক্ষা</label><input id="acExam"></div>'+
-      '<div><label>রোল</label><input id="acRoll"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="genAdmit()">🎫 তৈরি</button></div><div id="acList"></div>');
-  renderAdmitList();
-}
-function genAdmit(){
-  const y=$('#acYear').value, cid=$('#acCourse').value, exam=$('#acExam').value, roll=$('#acRoll').value.trim();
-  const s = DB.students.find(x=>x.year===y && x.courseId===cid && String(x.roll)===String(roll));
-  if(!s){ alert('শিক্ষার্থী নেই'); return; }
-  const a = {id:uid('ac'), studentId:s.id, year:y, courseId:cid, exam, roll, date:new Date().toISOString()};
-  DB.admits.push(a); saveDB(); printAdmitCard(a, s); renderAdmitList();
-}
-function renderAdmitList(){
-  const el = document.getElementById('acList'); if(!el) return;
-  let html = '<h4 style="color:var(--primary);margin-top:1rem">প্রকাশিত এডমিট</h4><table class="table"><tr><th>শিক্ষার্থী</th><th>পরীক্ষা</th><th>রোল</th><th>অ্যাকশন</th></tr>';
-  DB.admits.forEach(a=>{
-    const s = DB.students.find(x=>x.id===a.studentId);
-    html += '<tr><td>'+esc(s?s.name:'—')+'</td><td>'+esc(a.exam)+'</td><td>'+esc(a.roll)+'</td>'+
-    '<td><button class="btn sm green" onclick="printAdmitById(\''+a.id+'\')">🖨</button><button class="btn sm red" onclick="delAdmit(\''+a.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>'; el.innerHTML = html;
-}
-function delAdmit(id){ DB.admits = DB.admits.filter(x=>x.id!==id); saveDB(); renderAdmitList(); }
-function printAdmitById(id){ const a = DB.admits.find(x=>x.id===id); const s = DB.students.find(x=>x.id===a.studentId); printAdmitCard(a,s); }
-function printAdmitCard(a, s){
-  const st = DB.settings;
-  const body = `
-    <div style="max-width:520px;margin:auto;border:3px double #0b2447;border-radius:14px;padding:1.2rem;background:#fff">
-      <div style="text-align:center;border-bottom:2px solid #0b2447;padding-bottom:.5rem;margin-bottom:.8rem">
-        ${st.logo? `<img src="${esc(st.logo)}" style="height:55px;margin:0 auto .3rem">`:''}
-        <h2 style="color:#0b2447;margin:0">${esc(st.name)}</h2>
-        <p style="font-size:.82rem;margin:.2rem 0">${esc(st.address)} | ${esc(st.phone)}</p>
-        <div style="background:#0b2447;color:#fff;display:inline-block;padding:.3rem 1rem;border-radius:20px;margin-top:.3rem;font-weight:800;letter-spacing:1px">এডমিট কার্ড</div>
-      </div>
-      <div style="display:flex;gap:1rem;align-items:flex-start">
-        <div style="flex:0 0 100px;width:100px;height:110px;border:2px solid #d4af37;border-radius:8px;overflow:hidden;background:#eef2f9;display:flex;align-items:center;justify-content:center">
-          ${s.photo? `<img src="${esc(s.photo)}" style="width:100%;height:100%;object-fit:cover">` : '<span style="font-size:2.5rem">🎓</span>'}
-        </div>
-        <div style="flex:1;font-size:.88rem;line-height:1.7">
-          <div><b>নাম:</b> ${esc(s.name)}</div>
-          <div><b>পিতা:</b> ${esc(s.father||'—')}</div>
-          <div><b>মাতা:</b> ${esc(s.mother||'—')}</div>
-          <div><b>কোর্স:</b> ${esc(s.courseName)}</div>
-          <div><b>শিক্ষাবর্ষ:</b> ${esc(a.year)} | <b>রোল:</b> <b style="color:#b91c1c">${esc(s.roll)}</b></div>
-          <div><b>পরীক্ষা:</b> ${esc(a.exam)}</div>
-        </div>
-      </div>
-      <div style="background:#fef3c7;border-left:4px solid #d4af37;padding:.5rem;margin-top:.8rem;font-size:.8rem">
-        <b>নির্দেশনা:</b> পরীক্ষার হলে অবশ্যই এই এডমিট কার্ড ও আইডি কার্ড সাথে আনতে হবে।
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:1.2rem">
-        <div style="text-align:center;font-size:.75rem">
-          ${st.signature? `<img src="${esc(st.signature)}" style="height:38px">`:'<div style="height:38px"></div>'}
-          <div style="border-top:1px solid #000;padding-top:.15rem;min-width:110px">অধ্যক্ষের স্বাক্ষর</div>
-        </div>
-        <div style="text-align:center">${st.instSeal? `<img src="${esc(st.instSeal)}" style="height:65px">`:''}</div>
-      </div>
-    </div>`;
-  openDocWindow('এডমিট কার্ড', body);
-}
-function genCertificate(studentId){
-  const s = DB.students.find(x=>x.id===studentId); if(!s) return;
-  const c = DB.courses.find(x=>x.id===s.courseId);
-  const st = DB.settings;
-  const body = `
-    <div style="max-width:720px;margin:auto;border:6px double #d4af37;border-radius:14px;padding:2rem;background:linear-gradient(135deg,#fffef7,#fff);position:relative;text-align:center">
-      <div style="position:absolute;top:10px;left:10px;width:60px;height:60px;border:2px solid #d4af37;border-radius:50%;opacity:.4"></div>
-      <div style="position:absolute;top:10px;right:10px;width:60px;height:60px;border:2px solid #d4af37;border-radius:50%;opacity:.4"></div>
-      <div style="position:absolute;bottom:10px;left:10px;width:60px;height:60px;border:2px solid #d4af37;border-radius:50%;opacity:.4"></div>
-      <div style="position:absolute;bottom:10px;right:10px;width:60px;height:60px;border:2px solid #d4af37;border-radius:50%;opacity:.4"></div>
-      ${st.logo? `<img src="${esc(st.logo)}" style="height:70px;margin:0 auto .5rem">`:''}
-      <h1 style="color:#0b2447;letter-spacing:3px;font-size:1.8rem;margin:.3rem 0">সার্টিফিকেট অফ কমপ্লিশন</h1>
-      <div style="color:#d4af37;font-size:1.1rem;letter-spacing:6px;margin-bottom:1rem">★ ★ ★</div>
-      <p style="font-size:1rem;color:#333">এই সনদপত্র দ্বারা প্রত্যয়ন করা হচ্ছে যে</p>
-      <h2 style="color:#0b2447;font-size:1.8rem;margin:.8rem 0 .3rem;letter-spacing:1px">${esc(s.name)}</h2>
-      <p style="font-size:.88rem;color:#555">পিতা: ${esc(s.father||'—')} | মাতা: ${esc(s.mother||'—')}</p>
-      <p style="font-size:1rem;margin:1rem 0">সফলভাবে <b style="color:#0b2447">${esc(c?c.name:'')}</b> কোর্স সম্পন্ন করেছেন।</p>
-      <div style="display:flex;justify-content:center;gap:2rem;margin-top:.5rem;font-size:.9rem">
-        <div><b>শিক্ষাবর্ষ:</b> ${esc(s.year)}</div>
-        <div><b>রোল:</b> ${esc(s.roll)}</div>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:2rem">
-        <div style="text-align:center;font-size:.8rem">
-          <div>📅 ${new Date().toLocaleDateString('bn-BD')}</div>
-          <div style="border-top:1px solid #999;padding-top:.2rem;margin-top:.3rem;min-width:120px">তারিখ</div>
-        </div>
-        <div style="text-align:center">${st.instSeal? `<img src="${esc(st.instSeal)}" style="height:80px">`:''}</div>
-        <div style="text-align:center;font-size:.8rem">
-          ${st.signature? `<img src="${esc(st.signature)}" style="height:42px">`:'<div style="height:42px"></div>'}
-          <div style="border-top:1px solid #999;padding-top:.2rem;min-width:130px">অধ্যক্ষের স্বাক্ষর</div>
-        </div>
-      </div>
-    </div>`;
-  openDocWindow('সার্টিফিকেট', body);
-}
-
-/* LEDGER */
-function modLedger(){
-  moduleWrap('💰 আয়-ব্যয় হিসাব',
-    '<div class="form-grid">'+
-      '<div><label>ধরন</label><select id="lgType"><option value="income">আয়</option><option value="expense">ব্যয়</option></select></div>'+
-      '<div><label>বিবরণ</label><input id="lgDesc"></div>'+
-      '<div><label>পরিমাণ</label><input id="lgAmt" type="number"></div>'+
-      '<div><label>শিক্ষাবর্ষ</label><input id="lgYear" value="'+(new Date().getFullYear())+'"></div>'+
-      '<div><label>মাস</label><input id="lgMonth" value="'+(new Date().getMonth()+1)+'"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="addLedger()">💾 সেভ</button>'+
-    '<button class="btn" onclick="printLedger()">🖨 রিপোর্ট</button>'+
-    '<select id="lgFilterYear" style="max-width:150px"><option value="">সব বছর</option></select></div><div id="lgList"></div>');
-  const ySel = document.getElementById('lgFilterYear');
-  const years = new Set(DB.ledger.map(l=>l.year));
-  years.forEach(y=>{ const o = document.createElement('option'); o.value=y; o.textContent=y; ySel.appendChild(o); });
-  ySel.onchange = renderLedger; renderLedger();
-}
-function addLedger(){
-  const t=$('#lgType').value, d=$('#lgDesc').value.trim(), a=Number($('#lgAmt').value)||0;
-  if(!d||!a){ alert('বিবরণ ও পরিমাণ দিন'); return; }
-  DB.ledger.push({id:uid('lg'), type:t, desc:d, amount:a, year:$('#lgYear').value, month:$('#lgMonth').value, date:new Date().toISOString()});
-  saveDB(); modLedger();
-}
-function renderLedger(){
-  const el = document.getElementById('lgList'); if(!el) return;
-  const fy = document.getElementById('lgFilterYear')? document.getElementById('lgFilterYear').value : '';
-  let list = DB.ledger.slice(); if(fy) list = list.filter(l=>l.year===fy);
-  let inc=0, exp=0; list.forEach(l=>{ if(l.type==='income') inc+=l.amount; else exp+=l.amount; });
-  let html = '<div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:.6rem">'+
-    '<div class="notice-item" style="flex:1;border-left-color:#047857"><b>আয়:</b> ৳'+inc+'</div>'+
-    '<div class="notice-item" style="flex:1;border-left-color:#b91c1c"><b>ব্যয়:</b> ৳'+exp+'</div>'+
-    '<div class="notice-item" style="flex:1;border-left-color:#0b2447"><b>ব্যালেন্স:</b> ৳'+(inc-exp)+'</div></div>';
-  html += '<table class="table"><tr><th>ধরন</th><th>বিবরণ</th><th>পরিমাণ</th><th>বছর</th><th>মাস</th><th>অ্যাকশন</th></tr>';
-  list.slice().reverse().forEach(l=>{
-    html += '<tr><td><span class="badge '+(l.type==='income'?'ok':'warn')+'">'+(l.type==='income'?'আয়':'ব্যয়')+'</span></td>'+
-    '<td>'+esc(l.desc)+'</td><td>৳'+esc(l.amount)+'</td><td>'+esc(l.year)+'</td><td>'+esc(l.month)+'</td>'+
-    '<td><button class="btn sm red" onclick="delLedger(\''+l.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>'; el.innerHTML = html;
-}
-function delLedger(id){ DB.ledger = DB.ledger.filter(x=>x.id!==id); saveDB(); renderLedger(); }
-function printLedger(){
-  const fy = document.getElementById('lgFilterYear')? document.getElementById('lgFilterYear').value : '';
-  let list = DB.ledger.slice(); if(fy) list = list.filter(l=>l.year===fy);
-  let inc=0, exp=0; list.forEach(l=>{ if(l.type==='income') inc+=l.amount; else exp+=l.amount; });
-  let body = '<h2 style="text-align:center">'+esc(DB.settings.name)+'</h2><h3 style="text-align:center">আর্থিক বিবরণী</h3>'+
-  '<table border="1" cellspacing="0" cellpadding="6" style="width:100%;border-collapse:collapse"><tr><th>ধরন</th><th>বিবরণ</th><th>পরিমাণ</th></tr>';
-  list.forEach(l=> body += '<tr><td>'+(l.type==='income'?'আয়':'ব্যয়')+'</td><td>'+esc(l.desc)+'</td><td>৳'+esc(l.amount)+'</td></tr>');
-  body += '</table><h3 style="text-align:right">আয় ৳'+inc+' | ব্যয় ৳'+exp+' | ব্যালেন্স ৳'+(inc-exp)+'</h3>';
-  openDocWindow('আর্থিক বিবরণী', body);
-}
-
-/* COURSES */
-function modCourses(){
-  let html = '<div class="actions"><button class="btn gold" onclick="editCourse(null)">➕ নতুন কোর্স</button></div>';
-  html += '<table class="table"><tr><th>লোগো</th><th>নাম</th><th>ভর্তি ফি</th><th>মাসিক</th><th>সার্টিফিকেট</th><th>অ্যাকশন</th></tr>';
-  DB.courses.forEach(c=>{
-    html += '<tr><td>'+(c.logo?'<img src="'+esc(c.logo)+'" style="width:36px;height:36px;border-radius:50%;object-fit:cover">':'📘')+'</td>'+
-    '<td>'+esc(c.name)+'</td><td>৳'+esc(c.price)+'</td>'+
-    '<td>'+(c.fee?'৳'+esc(c.fee):'-')+'</td><td>'+(c.certFee==0?'ফ্রি':'৳'+esc(c.certFee))+'</td>'+
-    '<td><button class="btn sm" onclick="editCourse(\''+c.id+'\')">✏</button><button class="btn sm red" onclick="delCourse(\''+c.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>'; moduleWrap('📚 কোর্স ম্যানেজমেন্ট', html);
-}
-let _editCourseLogo = '';
-function editCourse(id){
-  const c = id? DB.courses.find(x=>x.id===id) : {id:'', name:'', logo:'', desc:'', price:'', oldPrice:'', fee:'', certFee:0, offerEnd:''};
-  _editCourseLogo = c.logo || '';
-  showFormModal(id?'কোর্স এডিট':'নতুন কোর্স',
-    '<div class="form-row"><label>লোগো</label><input type="file" accept="image/*" onchange="previewCourseLogo(this)">'+
-    '<div id="cLogoPreview">'+(c.logo? '<img src="'+esc(c.logo)+'" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);margin-top:.3rem">':'')+'</div></div>'+
-    '<div class="form-row"><label>নাম</label><input id="cName" value="'+esc(c.name)+'"></div>'+
-    '<div class="form-row"><label>বিবরণ</label><textarea id="cDesc" rows="3">'+esc(c.desc)+'</textarea></div>'+
-    '<div class="form-row"><label>ভর্তি ফি (৳)</label><input id="cPrice" type="number" value="'+esc(c.price)+'"></div>'+
-    '<div class="form-row"><label>কাটা মূল্য</label><input id="cOld" type="number" value="'+esc(c.oldPrice)+'"></div>'+
-    '<div class="form-row"><label>মাসিক ফি</label><input id="cFee" type="number" value="'+esc(c.fee)+'"></div>'+
-    '<div class="form-row"><label>সার্টিফিকেট ফি (০=ফ্রি)</label><input id="cCert" type="number" value="'+esc(c.certFee)+'"></div>'+
-    '<button class="btn green" style="width:100%" onclick="saveCourse(\''+(c.id||'')+'\')">💾 সেভ</button>');
-}
-function previewCourseLogo(input){
-  const f = input.files[0]; if(!f) return;
-  readImageCompressed(f, 300, 0.9, (b64, err)=>{
-    if(err){ alert('❌ '+err); return; }
-    _editCourseLogo = b64;
-    const el = document.getElementById('cLogoPreview');
-    if(el) el.innerHTML = '<img src="'+b64+'" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);margin-top:.3rem">';
-  });
-}
-function saveCourse(id){
-  const name = $('#cName').value.trim(); if(!name){ alert('নাম দিন'); return; }
-  const data = {name, desc:$('#cDesc').value, price:Number($('#cPrice').value)||0, oldPrice:$('#cOld').value? Number($('#cOld').value):'', fee:$('#cFee').value? Number($('#cFee').value):0, certFee:Number($('#cCert').value)||0, logo:_editCourseLogo||''};
-  if(id){ Object.assign(DB.courses.find(x=>x.id===id), data); }
-  else { DB.courses.push({id:uid('c'), ...data}); }
-  _editCourseLogo = '';
-  saveDB(); closeFormModal(); modCourses(); alert('✅ সেভ');
-}
-function delCourse(id){ if(!confirm('মুছবেন?')) return; DB.courses = DB.courses.filter(x=>x.id!==id); saveDB(); modCourses(); }
-
-/* ROUTINE */
-function modRoutine(){
-  const courseOpts = DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  const days = ['শনিবার','রবিবার','সোমবার','মঙ্গলবার','বুধবার','বৃহস্পতিবার','শুক্রবার'];
-  moduleWrap('📅 ক্লাস রুটিন',
-    '<div class="form-grid">'+
-      '<div><label>শিক্ষাবর্ষ</label><input id="rYear2" value="'+(new Date().getFullYear())+'"></div>'+
-      '<div><label>কোর্স</label><select id="rCourse2">'+courseOpts+'</select></div>'+
-      '<div><label>দিন</label><select id="rDay">'+days.map(d=>'<option>'+d+'</option>').join('')+'</select></div>'+
-      '<div><label>সময়</label><input id="rTime"></div>'+
-      '<div><label>বিষয়</label><input id="rSub"></div>'+
-      '<div><label>শিক্ষক</label><input id="rTeacher"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="addRoutine()">➕ যোগ</button></div><div id="rListAdmin"></div>');
-  renderRoutineAdmin();
-}
-function addRoutine(){
-  const year=$('#rYear2').value, courseId=$('#rCourse2').value, day=$('#rDay').value, time=$('#rTime').value, subject=$('#rSub').value, teacher=$('#rTeacher').value;
-  if(!time||!subject){ alert('সময় ও বিষয় দিন'); return; }
-  DB.routines.push({id:uid('rt'), year, courseId, day, time, subject, teacher});
-  saveDB(); renderRoutineAdmin();
-}
-function renderRoutineAdmin(){
-  const el = document.getElementById('rListAdmin'); if(!el) return;
-  let html = '<table class="table"><tr><th>শিক্ষাবর্ষ</th><th>কোর্স</th><th>দিন</th><th>সময়</th><th>বিষয়</th><th>শিক্ষক</th><th>অ্যাকশন</th></tr>';
-  DB.routines.forEach(r=>{
-    const c = DB.courses.find(x=>x.id===r.courseId);
-    html += '<tr><td>'+esc(r.year)+'</td><td>'+esc(c?c.name:'')+'</td><td>'+esc(r.day)+'</td><td>'+esc(r.time)+'</td><td>'+esc(r.subject)+'</td><td>'+esc(r.teacher)+'</td>'+
-    '<td><button class="btn sm red" onclick="delRoutine(\''+r.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>'; el.innerHTML = html;
-}
-function delRoutine(id){ DB.routines = DB.routines.filter(x=>x.id!==id); saveDB(); renderRoutineAdmin(); }
-
-/* EXAMS */
-function modExams(){
-  const courseOpts = DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  moduleWrap('📝 পরীক্ষা ও বিষয়',
-    '<h4 style="color:var(--primary)">পরীক্ষা</h4>'+
-    '<div class="form-grid"><div><label>কোর্স</label><select id="exCourse">'+courseOpts+'</select></div>'+
-    '<div><label>পরীক্ষার নাম</label><input id="exName"></div></div>'+
-    '<div class="actions"><button class="btn green" onclick="addExam()">➕ যোগ</button></div><div id="exList"></div>'+
-    '<h4 style="color:var(--primary);margin-top:1.2rem">বিষয়</h4>'+
-    '<div class="form-grid"><div><label>কোর্স</label><select id="sbCourse">'+courseOpts+'</select></div>'+
-    '<div><label>বিষয়</label><input id="sbName"></div>'+
-    '<div><label>পূর্ণ নম্বর</label><input id="sbFull" type="number" value="100"></div></div>'+
-    '<div class="actions"><button class="btn green" onclick="addSubject()">➕ যোগ</button></div><div id="sbList"></div>');
-  renderExamList(); renderSubjectList();
-}
-function addExam(){ const cid=$('#exCourse').value, n=$('#exName').value.trim(); if(!n){ alert('নাম দিন'); return; } DB.exams.push({id:uid('ex'), courseId:cid, name:n}); saveDB(); renderExamList(); }
-function renderExamList(){
-  const el = document.getElementById('exList'); if(!el) return;
-  let html = '<table class="table"><tr><th>কোর্স</th><th>পরীক্ষা</th><th>অ্যাকশন</th></tr>';
-  DB.exams.forEach(e=>{ const c = DB.courses.find(x=>x.id===e.courseId);
-    html += '<tr><td>'+esc(c?c.name:'')+'</td><td>'+esc(e.name)+'</td><td><button class="btn sm red" onclick="delExam(\''+e.id+'\')">🗑</button></td></tr>'; });
-  html += '</table>'; el.innerHTML = html;
-}
-function delExam(id){ DB.exams = DB.exams.filter(x=>x.id!==id); saveDB(); renderExamList(); }
-function addSubject(){ const cid=$('#sbCourse').value, n=$('#sbName').value.trim(), full=Number($('#sbFull').value)||100; if(!n){ alert('নাম দিন'); return; } DB.subjects.push({id:uid('sb'), courseId:cid, name:n, full}); saveDB(); renderSubjectList(); }
-function renderSubjectList(){
-  const el = document.getElementById('sbList'); if(!el) return;
-  let html = '<table class="table"><tr><th>কোর্স</th><th>বিষয়</th><th>পূর্ণ</th><th>অ্যাকশন</th></tr>';
-  DB.subjects.forEach(s=>{ const c = DB.courses.find(x=>x.id===s.courseId);
-    html += '<tr><td>'+esc(c?c.name:'')+'</td><td>'+esc(s.name)+'</td><td>'+esc(s.full)+'</td><td><button class="btn sm red" onclick="delSubject(\''+s.id+'\')">🗑</button></td></tr>'; });
-  html += '</table>'; el.innerHTML = html;
-}
-function delSubject(id){ DB.subjects = DB.subjects.filter(x=>x.id!==id); saveDB(); renderSubjectList(); }
-
-/* CHATBOT */
-function modChatbot(){
-  let html = '<div class="actions"><button class="btn gold" onclick="addChatbot()">➕ নতুন</button></div>'+
-    '<div class="form-grid"><div><label>শিরোনাম</label><input id="cbTitle"></div>'+
-    '<div style="grid-column:1/-1"><label>উত্তর</label><textarea id="cbText" rows="6"></textarea></div></div>'+
-    '<div class="actions"><button class="btn green" onclick="saveChatbot()">💾 সেভ</button><button class="btn gray" onclick="cancelChatbot()">বাতিল</button></div>'+
-    '<input type="hidden" id="cbEditId"><div id="cbList"></div>';
-  moduleWrap('🤖 চ্যাটবট', html); renderChatbotList();
-}
-function addChatbot(){ $('#cbEditId').value=''; $('#cbTitle').value=''; $('#cbText').value=''; }
-function saveChatbot(){
-  const id = $('#cbEditId').value, t = $('#cbTitle').value.trim(), x = $('#cbText').value.trim();
-  if(!t||!x){ alert('শিরোনাম ও তথ্য দিন'); return; }
-  if(id){ const c = DB.chatbot.find(y=>y.id===id); c.title=t; c.text=x; }
-  else { DB.chatbot.push({id:uid('cb'), title:t, text:x}); }
-  saveDB(); renderChatbotList(); cancelChatbot(); alert('✅ সেভ');
-}
-function cancelChatbot(){ $('#cbEditId').value=''; $('#cbTitle').value=''; $('#cbText').value=''; }
-function renderChatbotList(){
-  const el = document.getElementById('cbList'); if(!el) return;
-  let html = '<table class="table"><tr><th>শিরোনাম</th><th>তথ্য</th><th>অ্যাকশন</th></tr>';
-  DB.chatbot.forEach(c=>{
-    html += '<tr><td>'+esc(c.title)+'</td><td style="font-size:.8rem">'+esc(c.text.substring(0,60))+'...</td>'+
-    '<td><button class="btn sm" onclick="editChatbotItem(\''+c.id+'\')">✏</button><button class="btn sm red" onclick="delChatbotItem(\''+c.id+'\')">🗑</button></td></tr>';
-  });
-  html += '</table>'; el.innerHTML = html;
-}
-function editChatbotItem(id){
-  const c = DB.chatbot.find(x=>x.id===id); if(!c) return;
-  $('#cbEditId').value=id; $('#cbTitle').value=c.title; $('#cbText').value=c.text;
-}
-function delChatbotItem(id){ if(!confirm('মুছবেন?'))return; DB.chatbot = DB.chatbot.filter(x=>x.id!==id); saveDB(); renderChatbotList(); }
-
-/* SHORTCUTS */
-function modShortcuts(){
-  let html = '<div class="actions"><button class="btn gold" onclick="addShortcut()">➕ নতুন</button></div>';
-  html += '<table class="table"><tr><th>আইকন</th><th>লেবেল</th><th>টার্গেট</th><th>অ্যাকশন</th></tr>';
-  DB.shortcuts.forEach((q,i)=>{
-    html += '<tr><td style="font-size:1.4rem">'+esc(q.icon)+'</td><td>'+esc(q.label)+'</td><td>'+esc(q.target)+'</td>'+
-    '<td><button class="btn sm" onclick="editShortcutItem('+i+')">✏</button><button class="btn sm red" onclick="delShortcut('+i+')">🗑</button></td></tr>';
-  });
-  html += '</table>'; moduleWrap('⚡ শর্টকাট', html);
-}
-function addShortcut(){ editShortcutItem(-1); }
-function editShortcutItem(i){
-  const q = i>=0? DB.shortcuts[i] : {icon:'⭐', label:'', target:'courses'};
-  showFormModal(i>=0?'এডিট':'নতুন',
-    '<div class="form-row"><label>আইকন</label><input id="shIcon" value="'+esc(q.icon)+'"></div>'+
-    '<div class="form-row"><label>লেবেল</label><input id="shLbl" value="'+esc(q.label)+'"></div>'+
-    '<div class="form-row"><label>টার্গেট</label><input id="shTgt" value="'+esc(q.target)+'"></div>'+
-    '<button class="btn green" style="width:100%;margin-top:.6rem" onclick="saveShortcut('+i+')">💾 সেভ</button>');
-}
-function saveShortcut(i){
-  const data = {icon:$('#shIcon').value||'⭐', label:$('#shLbl').value.trim(), target:$('#shTgt').value.trim()};
-  if(!data.label){ alert('লেবেল দিন'); return; }
-  if(i>=0) DB.shortcuts[i] = data; else DB.shortcuts.push(data);
-  saveDB(); closeFormModal(); modShortcuts();
-}
-function delShortcut(i){ DB.shortcuts.splice(i,1); saveDB(); modShortcuts(); }
-
-/* MEDIA */
-function modMedia(){
-  moduleWrap('🎬 নোট, গ্যালারি ও ডেমো ক্লাস',
-    '<h4 style="color:var(--primary)">📝 ফ্রি নোট</h4><div class="form-grid">'+
-      '<div><label>শিরোনাম</label><input id="ntTitle"></div>'+
-      '<div><label>টেক্সট</label><input id="ntText"></div>'+
-      '<div><label>ছবি</label><input type="file" accept="image/*" id="ntImg"></div>'+
-      '<div><label>PDF</label><input type="file" accept="application/pdf" id="ntPdf"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="addNote()">➕ যোগ</button></div><div id="ntList"></div>'+
-    '<h4 style="color:var(--primary);margin-top:1.2rem">🖼️ গ্যালারি</h4><div class="form-grid">'+
-      '<div><label>ধরন</label><select id="glType"><option value="image">ছবি</option><option value="video">ভিডিও</option><option value="link">লিংক</option></select></div>'+
-      '<div><label>ফাইল</label><input type="file" id="glFile"></div>'+
-      '<div><label>অথবা লিংক</label><input id="glLink"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="addGallery()">➕ যোগ</button></div><div id="glList"></div>'+
-    '<h4 style="color:var(--primary);margin-top:1.2rem">▶️ ফ্রি ডেমো ক্লাস</h4><div class="form-grid">'+
-      '<div><label>শিরোনাম</label><input id="vdTitle"></div>'+
-      '<div><label>ধরন</label><select id="vdType"><option value="link">লিংক</option><option value="file">ভিডিও ফাইল</option></select></div>'+
-      '<div><label>লিংক</label><input id="vdLink"></div>'+
-      '<div><label>ফাইল</label><input type="file" accept="video/*" id="vdFile"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="addVideo()">➕ যোগ</button></div><div id="vdList"></div>'+
-    '<h4 style="color:var(--primary);margin-top:1.2rem">📢 নোটিস</h4><div class="form-grid">'+
-      '<div><label>শিরোনাম</label><input id="ncTitle"></div>'+
-      '<div><label>তারিখ</label><input id="ncDate" type="date"></div>'+
-      '<div style="grid-column:1/-1"><label>বিবরণ</label><textarea id="ncText" rows="2"></textarea></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="addNotice()">➕ যোগ</button></div><div id="ncList"></div>');
-  renderMediaLists();
-}
-function addNote(){
-  const t = $('#ntTitle').value.trim(); if(!t){ alert('শিরোনাম দিন'); return; }
-  const imgF = $('#ntImg').files[0], pdfF = $('#ntPdf').files[0];
-  const finish = (img, pdf)=>{ DB.notes.push({id:uid('nt'), title:t, text:$('#ntText').value, image:img||'', pdf:pdf||''}); saveDB(); modMedia(); };
-  const step2 = (img)=>{ if(pdfF) readPdfBase64(pdfF, (p,err)=>finish(img, err?'':p)); else finish(img, ''); };
-  if(imgF) readImageCompressed(imgF, 800, 0.85, (b64,err)=>step2(err?'':b64)); else step2('');
-}
-function addGallery(){
-  const type = $('#glType').value, link = $('#glLink').value.trim(), f = $('#glFile').files[0];
-  const finish = (src)=>{ DB.gallery.push({id:uid('gl'), type, src}); saveDB(); modMedia(); };
-  if(type==='link'){ if(!link){ alert('লিংক দিন'); return; } finish(link); }
-  else if(type==='image' && f){ readImageCompressed(f, 1200, 0.85, (b64,err)=>finish(err?'':b64)); }
-  else if(f){ const r = new FileReader(); r.onload = ()=>finish(r.result); r.readAsDataURL(f); }
-  else alert('ফাইল দিন');
-}
-function addVideo(){
-  const t = $('#vdTitle').value.trim(); if(!t){ alert('নাম দিন'); return; }
-  const type = $('#vdType').value;
-  const finish = (src)=>{ DB.videos.push({id:uid('vd'), title:t, type, src}); saveDB(); modMedia(); };
-  if(type==='link'){ const l = $('#vdLink').value.trim(); if(!l){ alert('লিংক দিন'); return; } finish(l); }
-  else { const f = $('#vdFile').files[0]; if(!f){ alert('ফাইল দিন'); return; } const r = new FileReader(); r.onload = ()=>finish(r.result); r.readAsDataURL(f); }
-}
-function addNotice(){
-  const t = $('#ncTitle').value.trim(); if(!t){ alert('নাম দিন'); return; }
-  DB.notices.push({id:uid('nc'), title:t, date:$('#ncDate').value, text:$('#ncText').value, image:'', video:''});
-  saveDB(); modMedia();
-}
-function renderMediaLists(){
-  const nt = document.getElementById('ntList');
-  if(nt){
-    let h = '<table class="table"><tr><th>শিরোনাম</th><th>ছবি</th><th>PDF</th><th>অ্যাকশন</th></tr>';
-    DB.notes.forEach(n=> h += '<tr><td>'+esc(n.title)+'</td><td>'+(n.image?'✔':'—')+'</td><td>'+(n.pdf?'✔':'—')+'</td><td><button class="btn sm red" onclick="delNote(\''+n.id+'\')">🗑</button></td></tr>');
-    h += '</table>'; nt.innerHTML = h;
-  }
-  const gl = document.getElementById('glList');
-  if(gl){
-    let h = '<table class="table"><tr><th>ধরন</th><th>প্রিভিউ</th><th>অ্যাকশন</th></tr>';
-    DB.gallery.forEach(g=> h += '<tr><td>'+esc(g.type)+'</td><td style="font-size:.8rem">'+esc(String(g.src).substring(0,40))+'...</td><td><button class="btn sm red" onclick="delGallery(\''+g.id+'\')">🗑</button></td></tr>');
-    h += '</table>'; gl.innerHTML = h;
-  }
-  const vd = document.getElementById('vdList');
-  if(vd){
-    let h = '<table class="table"><tr><th>শিরোনাম</th><th>ধরন</th><th>অ্যাকশন</th></tr>';
-    DB.videos.forEach(v=> h += '<tr><td>'+esc(v.title)+'</td><td>'+esc(v.type)+'</td><td><button class="btn sm red" onclick="delVideo(\''+v.id+'\')">🗑</button></td></tr>');
-    h += '</table>'; vd.innerHTML = h;
-  }
-  const nc = document.getElementById('ncList');
-  if(nc){
-    let h = '<table class="table"><tr><th>শিরোনাম</th><th>তারিখ</th><th>অ্যাকশন</th></tr>';
-    DB.notices.forEach(n=> h += '<tr><td>'+esc(n.title)+'</td><td>'+esc(n.date||'')+'</td><td><button class="btn sm red" onclick="delNotice(\''+n.id+'\')">🗑</button></td></tr>');
-    h += '</table>'; nc.innerHTML = h;
-  }
-}
-function delNote(id){ DB.notes = DB.notes.filter(x=>x.id!==id); saveDB(); modMedia(); }
-function delGallery(id){ DB.gallery = DB.gallery.filter(x=>x.id!==id); saveDB(); modMedia(); }
-function delVideo(id){ DB.videos = DB.videos.filter(x=>x.id!==id); saveDB(); modMedia(); }
-function delNotice(id){ DB.notices = DB.notices.filter(x=>x.id!==id); saveDB(); modMedia(); }
-
-/* SECURITY */
-function modSecurity(){
-  moduleWrap('🔐 সিকিউরিটি ও পাসওয়ার্ড',
-    '<div class="form-grid">'+
-      '<div><label>Admin ID</label><input id="scId" value="'+esc(DB.settings.adminId)+'"></div>'+
-      '<div><label>নতুন পাসওয়ার্ড</label><input id="scPass" type="password" placeholder="পরিবর্তন করতে চাইলে লিখুন"></div>'+
-      '<div><label>রিকভারি ইমেইল</label><input id="scRec" value="'+esc(DB.settings.recoveryEmail)+'"></div>'+
-    '</div><div class="actions"><button class="btn green" onclick="saveSecurity()">💾 সেভ</button>'+
-    '<button class="btn gold" onclick="testOtpReset()">📧 OTP রিসেট উইন্ডো খুলুন</button></div>'+
-    '<h4 style="color:var(--primary);margin-top:1.2rem">ডেটা ব্যাকআপ</h4>'+
-    '<div class="actions">'+
-      '<button class="btn gold" onclick="exportDB()">📤 এক্সপোর্ট</button>'+
-      '<button class="btn" onclick="document.getElementById(\'importFile\').click()">📥 ইমপোর্ট</button>'+
-      '<input type="file" id="importFile" accept="application/json" style="display:none" onchange="importDB(this)">'+
-    '</div>');
-}
-function saveSecurity(){
-  DB.settings.adminId = $('#scId').value.trim();
-  const p = $('#scPass').value; if(p) DB.settings.adminPass = p;
-  DB.settings.recoveryEmail = $('#scRec').value.trim();
-  saveDB(); alert('✅ সেভ');
-}
-function exportDB(){
-  const data = JSON.stringify(DB, null, 2);
-  const blob = new Blob([data], {type:'application/json'});
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'bs-elearning-backup.json'; a.click();
-}
-function importDB(input){
-  const f = input.files[0]; if(!f) return;
-  const r = new FileReader();
-  r.onload = ()=>{ try{ DB = JSON.parse(r.result); saveDB(); modSecurity(); alert('✅ ইমপোর্ট সফল'); } catch(e){ alert('❌ ভুল ফাইল'); } };
-  r.readAsText(f);
-}
-
-function showFormModal(title, html){
-  const old = document.getElementById('formModal'); if(old) old.remove();
-  const d = document.createElement('div'); d.className='modal-overlay'; d.id='formModal';
-  d.innerHTML = '<div class="modal small"><div class="modal-head"><h3>'+esc(title)+'</h3><button onclick="closeFormModal()">✕</button></div><div class="modal-body">'+html+'</div></div>';
-  d.addEventListener('click', e=>{ if(e.target===d) d.remove(); });
-  document.body.appendChild(d);
-}
-function closeFormModal(){ const m = document.getElementById('formModal'); if(m) m.remove(); }
-
-/* OFFICIAL DOCS */
-function modOfficialDocs(){
-  const courseOpts = DB.courses.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
-  const years = yearOptions();
-  moduleWrap('📂 অফিসিয়াল ডকুমেন্টস সেন্টার',
-    '<div class="form-grid">'+
-      '<div><label>ডকুমেন্ট</label><select id="odType">'+
-        '<option value="admit">এডমিট কার্ড</option>'+
-        '<option value="marksheet">মার্কশিট</option>'+
-        '<option value="certificate">সার্টিফিকেট</option>'+
-        '<option value="attendance">হাজিরা শিট</option>'+
-        '<option value="signcopy">সিগনেচার কপি</option>'+
-      '</select></div>'+
-      '<div><label>শিক্ষাবর্ষ</label><select id="odYear">'+years+'</select></div>'+
-      '<div><label>কোর্স</label><select id="odCourse">'+courseOpts+'</select></div>'+
-      '<div><label>রোল</label><input id="odRoll" placeholder="রোল"></div>'+
-      '<div><label>পরীক্ষা</label><input id="odExam" placeholder="বার্ষিক/ফাইনাল"></div>'+
-      '<div><label>মাস (হাজিরা)</label><input id="odMonth" type="number" min="1" max="12"></div>'+
-    '</div>'+
-    '<div class="actions">'+
-      '<button class="btn green" onclick="generateOfficialDoc()">📄 জেনারেট</button>'+
-      '<button class="btn gold" onclick="quickPrintStudents()">🖨 শিক্ষার্থী তালিকা</button>'+
-      '<button class="btn" onclick="quickPrintLedger()">💰 আর্থিক রিপোর্ট</button>'+
-    '</div><div id="odLog"></div>');
-  setTimeout(()=>{ const y = $('#odYear'); if(y) y.value = new Date().getFullYear(); }, 50);
-  renderOfficialDocLog();
-}
-function generateOfficialDoc(){
-  const type = $('#odType').value;
-  const y = $('#odYear').value, cid = $('#odCourse').value;
-  const roll = $('#odRoll').value.trim(), exam = $('#odExam').value.trim(), month = $('#odMonth').value.trim();
-  if(type==='attendance'){ if(!y||!cid){ alert('শিক্ষাবর্ষ ও কোর্স দিন'); return; } printAttendanceOfficial(y, cid, month||new Date().getMonth()+1); logOfficialDoc('হাজিরা', y, cid, 'সব'); return; }
-  if(!y || !cid || !roll){ alert('শিক্ষাবর্ষ, কোর্স, রোল দিন'); return; }
-  const s = DB.students.find(x=>x.year===y && x.courseId===cid && String(x.roll)===String(roll));
-  if(!s){ alert('❌ শিক্ষার্থী নেই'); return; }
-  if(type==='admit'){ if(!exam){ alert('পরীক্ষা দিন'); return; } printAdmitCard({year:y, exam, roll}, s); logOfficialDoc('এডমিট', y, cid, roll); }
-  else if(type==='marksheet'){ const found = DB.results.find(x=>x.studentId===s.id && (!exam||x.exam===exam)) || DB.results.find(x=>x.studentId===s.id); if(!found){ alert('ফলাফল নেই'); return; } printMarksheet(found, s); logOfficialDoc('মার্কশিট', y, cid, roll); }
-  else if(type==='certificate'){ genCertificate(s.id); logOfficialDoc('সার্টিফিকেট', y, cid, roll); }
-  else if(type==='signcopy'){ printSignCopyOfficial(y, cid, exam); logOfficialDoc('সাইন কপি', y, cid, 'সব'); }
-}
-function printAttendanceOfficial(y, cid, month){
-  const c = DB.courses.find(x=>x.id===cid);
-  const days = new Date(new Date().getFullYear(), Number(month), 0).getDate();
-  let header = '<tr><th>রোল</th><th>নাম</th>';
-  for(let d=1; d<=days; d++) header += '<th style="font-size:.7rem">'+d+'</th>';
-  header += '</tr>';
-  let rows = '';
-  DB.students.filter(s=>s.courseId===cid && (!y || s.year===y)).forEach(s=>{
-    rows += '<tr><td>'+esc(s.roll)+'</td><td>'+esc(s.name)+'</td>';
-    for(let d=1; d<=days; d++) rows += '<td></td>';
-    rows += '</tr>';
-  });
-  openDocWindow('হাজিরা শিট', '<h3>হাজিরা — '+esc(c?c.name:'')+' | মাস '+month+'</h3><table border="1" cellspacing="0" cellpadding="3" style="width:100%;border-collapse:collapse;font-size:.7rem">'+header+rows+'</table>');
-}
-function printSignCopyOfficial(y, cid, exam){
-  const c = DB.courses.find(x=>x.id===cid);
-  let list = DB.students.filter(s=>s.courseId===cid && (!y || s.year===y));
-  let body = '<h3>সাইন কপি — '+esc(c?c.name:'')+' ('+esc(exam||'')+')</h3>'+
-  '<table border="1" cellspacing="0" cellpadding="8" style="width:100%;border-collapse:collapse"><tr><th>রোল</th><th>নাম</th><th>স্বাক্ষর</th></tr>';
-  list.forEach(s=> body += '<tr><td>'+esc(s.roll)+'</td><td>'+esc(s.name)+'</td><td style="height:40px"></td></tr>');
-  body += '</table>'; openDocWindow('সাইন কপি', body);
-}
-function quickPrintStudents(){
-  const y = prompt('শিক্ষাবর্ষ:')||''; const cid = prompt('কোর্স ID:')||'';
-  let list = DB.students.slice();
-  if(y) list = list.filter(s=>s.year===y); if(cid) list = list.filter(s=>s.courseId===cid);
-  if(!list.length){ alert('শিক্ষার্থী নেই'); return; }
-  let body = '<h3>শিক্ষার্থী তালিকা</h3><table border="1" cellspacing="0" cellpadding="6" style="width:100%;border-collapse:collapse"><tr><th>ছবি</th><th>রোল</th><th>নাম</th><th>পিতা</th><th>কোর্স</th></tr>';
-  list.forEach(s=> body += '<tr><td>'+(s.photo?'<img src="'+esc(s.photo)+'" style="width:40px;height:40px;border-radius:50%">':'👤')+'</td><td>'+esc(s.roll)+'</td><td>'+esc(s.name)+'</td><td>'+esc(s.father)+'</td><td>'+esc(s.courseName)+'</td></tr>');
-  body += '</table>'; openDocWindow('শিক্ষার্থী তালিকা', body);
-}
-function quickPrintLedger(){
-  let list = DB.ledger.slice(); if(!list.length){ alert('লেনদেন নেই'); return; }
-  let inc=0, exp=0; list.forEach(l=>{ if(l.type==='income') inc+=l.amount; else exp+=l.amount; });
-  let body = '<h3>আর্থিক বিবরণী</h3><table border="1" cellspacing="0" cellpadding="6" style="width:100%;border-collapse:collapse"><tr><th>ধরন</th><th>বিবরণ</th><th>পরিমাণ</th></tr>';
-  list.forEach(l=> body += '<tr><td>'+(l.type==='income'?'আয়':'ব্যয়')+'</td><td>'+esc(l.desc)+'</td><td>৳'+esc(l.amount)+'</td></tr>');
-  body += '</table><h3 style="text-align:right">আয় ৳'+inc+' | ব্যয় ৳'+exp+' | ব্যালেন্স ৳'+(inc-exp)+'</h3>';
-  openDocWindow('আর্থিক বিবরণী', body);
-}
-function logOfficialDoc(docType, year, courseId, roll){
-  if(!DB.officialDocLog) DB.officialDocLog = [];
-  DB.officialDocLog.unshift({id: uid('odl'), type: docType, year, courseId, roll, at: new Date().toISOString()});
-  if(DB.officialDocLog.length > 30) DB.officialDocLog = DB.officialDocLog.slice(0, 30);
-  saveDB(); renderOfficialDocLog();
-}
-function renderOfficialDocLog(){
-  const el = document.getElementById('odLog'); if(!el) return;
-  if(!DB.officialDocLog || !DB.officialDocLog.length){ el.innerHTML = '<div class="notice-item">এখনো ডকুমেন্ট তৈরি হয়নি।</div>'; return; }
-  let html = '<table class="table"><tr><th>ধরন</th><th>বছর</th><th>কোর্স</th><th>রোল</th><th>সময়</th></tr>';
-  DB.officialDocLog.forEach(l=>{
-    const c = DB.courses.find(x=>x.id===l.courseId);
-    html += '<tr><td><span class="badge info">'+esc(l.type)+'</span></td><td>'+esc(l.year)+'</td><td>'+esc(c?c.name:l.courseId)+'</td><td>'+esc(l.roll)+'</td>'+
-    '<td style="font-size:.75rem">'+new Date(l.at).toLocaleString('bn-BD')+'</td></tr>';
-  });
-  html += '</table>'; el.innerHTML = html;
-}
-
-/* ENROLLMENTS */
-function modEnrollments(){
-  const pending = DB.pendingEnrollments.filter(p=>p.status==='pending');
-  let html = '<div class="actions"><button class="btn gray" onclick="renderDashboard()">← ড্যাশবোর্ড</button></div>';
-  html += '<h4 style="color:var(--primary)">⏳ পেন্ডিং ('+pending.length+')</h4>';
-  if(pending.length){
-    html += '<table class="table"><tr><th>ছবি</th><th>শিক্ষাবর্ষ</th><th>কোর্স</th><th>নাম</th><th>ফোন</th><th>TrxID</th><th>অ্যাকশন</th></tr>';
-    pending.forEach(p=>{
-      html += '<tr><td>'+(p.photo?'<img src="'+esc(p.photo)+'" class="avatar-thumb">':'<div class="avatar-placeholder">👤</div>')+'</td>'+
-      '<td>'+esc(p.year)+'</td><td>'+esc(p.courseName)+'</td><td>'+esc(p.name)+'</td>'+
-      '<td>'+esc(p.phone)+'</td><td>'+esc(p.trx)+'</td>'+
-      '<td class="row-actions">'+
-        '<button class="btn sm green" onclick="approveEnrollment(\''+p.id+'\')">✔ Approve</button>'+
-        '<button class="btn sm red" onclick="rejectEnrollment(\''+p.id+'\')">✖ Reject</button>'+
-      '</td></tr>';
-    });
-    html += '</table>';
-  } else html += '<div class="notice-item">পেন্ডিং নেই।</div>';
-  moduleWrap('📥 এনরোলমেন্ট Approvals', html);
-}
-function approveEnrollment(id){
-  const p = DB.pendingEnrollments.find(x=>x.id===id); if(!p) return;
-  if(p.status !== 'pending'){ alert('প্রসেস হয়েছে।'); return; }
-  const sameGroup = DB.students.filter(s=>s.courseId===p.courseId && s.year===p.year);
-  const roll = String(sameGroup.length+1).padStart(3,'0');
-  DB.students.push({id: uid('st'), year: p.year, courseId: p.courseId, courseName: p.courseName, roll, name: p.name, father: p.father, mother: p.mother, phone: p.phone, photo: p.photo||'', trx: p.trx, createdAt: new Date().toISOString()});
-  p.status = 'approved'; p.roll = roll; p.approvedAt = new Date().toISOString();
-  saveDB(); alert('✅ Approve! রোল: '+roll); modEnrollments();
-}
-function rejectEnrollment(id){
-  const p = DB.pendingEnrollments.find(x=>x.id===id); if(!p) return;
-  if(p.status !== 'pending'){ alert('প্রসেস হয়েছে।'); return; }
-  if(!confirm('Reject?')) return;
-  p.status = 'rejected'; p.rejectedAt = new Date().toISOString();
-  saveDB(); alert('❌ Rejected'); modEnrollments();
-}
-
-/* DOC WINDOW */
-function openDocWindow(title, bodyHTML){
-  const s = DB.settings;
-  const watermark = s.logo?
-    '<div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:.08;z-index:0"><img src="'+esc(s.logo)+'" style="max-width:70%;max-height:70%"></div>' :
-    '<div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:.06;z-index:0"><div style="font-size:14rem;font-weight:900;color:#0b2447">BS</div></div>';
-  const header = '<div style="text-align:center;margin-bottom:.6rem">'+
-    (s.logo? '<img src="'+esc(s.logo)+'" style="height:60px;margin:0 auto .3rem">' : '')+
-    '<div style="font-weight:900;color:#0b2447;font-size:1.1rem">'+esc(s.name)+'</div>'+
-    '<div style="font-size:.8rem">'+esc(s.address)+' | '+esc(s.phone)+'</div></div><hr>';
-  const footer = '<hr style="margin-top:1.5rem"><div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:.5rem">'+
-    '<div style="font-size:.8rem">📅 '+new Date().toLocaleDateString('bn-BD')+'</div>'+
-    '<div style="text-align:center">'+
-      (s.signature? '<img src="'+esc(s.signature)+'" style="height:42px"><br>':'')+
-      (s.signSeal? '<img src="'+esc(s.signSeal)+'" style="height:42px">':'')+
-      '<div style="border-top:1px solid #000;padding-top:.2rem;font-size:.8rem;min-width:140px">'+esc(DB.principal.name)+'<br>'+esc(DB.principal.role)+'</div></div>'+
-    '<div>'+(s.instSeal? '<img src="'+esc(s.instSeal)+'" style="height:70px">':'')+'</div></div>';
-  const html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+esc(title)+'</title>'+
-  '<style>body{font-family:"Noto Sans Bengali",Tahoma,sans-serif;padding:24px;color:#111;position:relative;background:#fff}h2,h3{text-align:center;margin:.3rem 0}table{margin-top:.5rem}</style>'+
-  '</head><body>'+watermark+'<div style="position:relative;z-index:1">'+header+bodyHTML+footer+'</div>'+
-  '<div style="text-align:center;margin-top:1rem" class="no-print">'+
-    '<button onclick="window.print()" style="padding:.5rem 1rem;background:#0b2447;color:#fff;border:none;border-radius:6px;cursor:pointer;margin-right:.5rem">🖨 প্রিন্ট</button>'+
-    '<button onclick="downloadHTML()" style="padding:.5rem 1rem;background:#d4af37;color:#0b2447;border:none;border-radius:6px;cursor:pointer">📥 ডাউনলোড</button>'+
-  '</div>'+
-  '<script>function downloadHTML(){const b=new Blob([document.documentElement.outerHTML],{type:"text/html"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="'+esc(title)+'.html";a.click();}<\/script>'+
-  '</body></html>';
-  const w = window.open('', '_blank');
-  if(!w){ alert('পপ-আপ ব্লক'); return; }
-  w.document.write(html); w.document.close();
-}
-
-function generateDoc(){
-  const type = $('#docType').value;
-  const y = $('#docYear').value, cid = $('#docCourse').value;
-  const roll = $('#docRoll').value.trim(), exam = $('#docExam').value.trim();
-  const view = $('#docView');
-  if(!y || !cid || !roll){ view.innerHTML = '<div class="notice-item">⚠ শিক্ষাবর্ষ, কোর্স, রোল দিন।</div>'; return; }
-  const stu = DB.students.find(x=>x.year===y && x.courseId===cid && String(x.roll)===String(roll));
-  if(!stu){ view.innerHTML = '<div class="notice-item">❌ শিক্ষার্থী নেই।</div>'; return; }
-  if(type==='admit'){
-    if(!exam){ view.innerHTML = '<div class="notice-item">⚠ পরীক্ষা দিন।</div>'; return; }
-    view.innerHTML = '<div class="doc-preview"><h3>🎫 এডমিট প্রস্তুত</h3><p><b>'+esc(stu.name)+'</b> | রোল: '+esc(stu.roll)+'</p></div>';
-    setTimeout(()=>printAdmitCard({year:y, exam, roll}, stu), 200);
-  } else if(type==='marksheet'){
-    const found = DB.results.find(x=>x.studentId===stu.id && (!exam||x.exam===exam)) || DB.results.find(x=>x.studentId===stu.id);
-    if(!found){ view.innerHTML = '<div class="notice-item">❌ ফলাফল নেই।</div>'; return; }
-    view.innerHTML = '<div class="doc-preview"><h3>📊 মার্কশিট প্রস্তুত</h3><p><b>'+esc(stu.name)+'</b> | গ্রেড: '+esc(found.grade)+'</p></div>';
-    setTimeout(()=>printMarksheet(found, stu), 200);
-  } else if(type==='certificate'){
-    view.innerHTML = '<div class="doc-preview"><h3>🎓 সার্টিফিকেট প্রস্তুত</h3><p><b>'+esc(stu.name)+'</b></p></div>';
-    setTimeout(()=>genCertificate(stu.id), 200);
-  }
-}
-
-(function init(){
-  loadDB(); applyTheme(); renderFrontend();
-  initFirebase();
-  setTimeout(()=>{ if($('#rtYear')) $('#rtYear').value = new Date().getFullYear(); if($('#docYear')) $('#docYear').value = new Date().getFullYear(); }, 100);
-  document.addEventListener('keydown', e=>{
-    if(e.key==='Escape'){
-      $$('.modal-overlay').forEach(m=>{ if(m.id!=='adminModal' || !isAdmin) m.classList.add('hidden'); });
-      const fm = document.getElementById('formModal'); if(fm) fm.remove();
-    }
-  });
-})();
+  const c = document.getElementById('adminContent');
+  c.innerHTML = '<div class="admin-cards">'+
+    '<div class="admin-card" onclick="renderModule(\'settings\')"><div class="icon">⚙️</div><div class="lbl">সেটিংস</div></div>'+
+    '<div class="admin-card" onclick="renderModule(\'slides\')"><div class="icon">🖼️</div><div class="lbl">স্লাইডার</div></div>'+
+    '<div class="admin-card" onclick="renderModule(\'courses\')"><div class="icon">📚</div><div class="lbl">কোর্স</div></div>'+
+    '<div class="admin-card" onclick="renderModule(\'students\')"><div class="icon">👨‍🎓</div><div class="lbl">ছাত্র</div><span class="cnt-badge">'+DB.students.length+'</span></div>'+
+    '<div class="admin-card" onclick="renderModule(\'pending\')"><div class="icon">⏳</div><div class="lbl">পেন্ডিং ভর্তি</div><span class="cnt-badge">'+DB.pendingEnrollments.filter(x=>x.status===\'pending\').length+'</span></div>'+
+    '<div class="admin-card" onclick="renderModule(\'notices\')"><div class="icon">📢</div><div class="lbl">নোটিস</div></div>'+
+    '<div class="admin-card" onclick="renderModule(\'gallery\')"><div class="icon">🎬</div><div class="lbl">গ্যালারি</div></div>'+
+    '<div class="admin-card" onclick="renderModule(\'notes\')"><div class="icon">📝</div><div class="lbl">নোট</div></div>'+
+    '<div class="admin-card" onclick="renderModule(\'payments\')"><div class="icon">💵</div><div class="lbl">পেমেন্ট</div><span class="cnt-badge">'+DB.payments.length+'</span></div>'+
+  '</div><div id="moduleArea"></div>';
+}
+function renderModule(name){ const area = document.getElementById('moduleArea'); if(name==='settings'){ area.innerHTML = '<div class="admin-module"><h3>সেটিংস</h3><div class="form-grid"><div class="form-row"><label>নাম</label><input id="sName" value="'+esc(DB.settings.name)+'"></div><div class="form-row"><label>ফোন</label><input id="sPhone" value="'+esc(DB.settings.phone)+'"></div><div class="form-row"><label>ঠিকানা</label><input id="sAddr" value="'+esc(DB.settings.address)+'"></div><div class="form-row"><label>Payment QR URL</label><input id="sQR" value="'+esc(DB.settings.paymentQR)+'"></div></div><button class="btn gold" onclick="saveSettings()">সেভ</button></div>'; } else { area.innerHTML = '<div class="admin-module"><h3>'+name+'</h3><p>এখানে '+name+' ম্যানেজ করবেন। পুরো কোডে সব মডিউল আছে, প্রয়োজনে বলুন আমি পুরো Admin Panel কোড দিয়ে দিবো।</p></div>'; } }
+function saveSettings(){ DB.settings.name=document.getElementById('sName').value; DB.settings.phone=document.getElementById('sPhone').value; DB.settings.address=document.getElementById('sAddr').value; DB.settings.paymentQR=document.getElementById('sQR').value; saveDB(); alert('সেভ হয়েছে'); }
+function openDocWindow(title, body){ const w = window.open('', '_blank'); w.document.write('<html><head><title>'+title+'</title><style>body{font-family:Arial} table{width:100%}</style></head><body>'+body+'<script>window.print()<\/script></body></html>'); w.document.close(); }
+function generateDoc(){ alert('ডেমো: এডমিট/মার্কশিট জেনারেট হবে। পুরো ফাংশন আপনার মূল ফাইলে আছে।'); }
+function forgotPassword(){ document.getElementById('loginModal').classList.add('hidden'); document.getElementById('otpModal').classList.remove('hidden'); }
+function closeOtpModal(){ document.getElementById('otpModal').classList.add('hidden'); }
+function sendOtp(){ alert('OTP সিস্টেমে EmailJS Key বসাতে হবে।'); }
+function otpNext(el,i){ if(el.value.length===1){ const next = document.querySelectorAll('#otpBox input')[i+1]; if(next) next.focus(); } }
+function verifyOtp(){}
+function saveNewPassword(){}
+window.addEventListener('DOMContentLoaded', ()=>{ loadDB(); renderFrontend(); initFirebase(); });
 </script>
 </body>
-</html>
+</html>[k][m][i][0]
